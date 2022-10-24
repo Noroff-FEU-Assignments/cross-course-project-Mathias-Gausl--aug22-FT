@@ -1,10 +1,37 @@
-@media screen and (max-width: 550px) {
+@font-face {
+  font-family: "kontakt";
+  src: url(/fonts/Kontakt.ttf) format("tff");
+  font-family: "dosis";
+  src: url(/fonts/Dosis-Medium.ttf) format("tff");
+}
+body {
+  background-image: url(/images/bck.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  margin: 0 0 ;
+}
+
+* {
+  font-family: "dosis", "helvetica";
+}
+h1,
+h3 {
+  font-family: "kontakt", "times-new roman";
+  color: #ffffff;
+}
+nav li {
+  font-family: "kontakt", "times-new roman";
+}
+
+@media screen and (max-width: 500px) {
   header {
     display: flex;
     background-color: #1b203d;
     flex-wrap: nowrap;
     position: relative;
     min-height: 100px;
+    
   }
 
   .i img {
@@ -30,7 +57,7 @@
     margin: 0 10px 0 auto;
   }
   #user {
-    margin: 0 10px 0 0;
+    margin: 0 15px 0 0;
   }
   #a_user {
     max-height: 24px;
@@ -71,22 +98,21 @@
   header {
     min-height: 125px;
   }
-}
-@media screen and (max-width: 340px) {
-    .i {
-      width: 50%;
-      left: 20%;
-    }
+  .i {
+    width: 50%;
+    left: 20%;
   }
-@media screen and (min-width: 550px) {
-  #ham,#checkmenu,
+}
+@media screen and (min-width: 501px) {
+  #ham,
+  #checkmenu,
   #a_user {
     display: none;
   }
   header {
     display: flex;
     background-color: #1b203d;
-    min-height: 200px;
+    min-height: 150px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -98,41 +124,140 @@
     max-height: 20vh;
     width: 100%;
     display: block;
-}
- .i{
+  }
+  .i {
     flex-shrink: 0;
- }
+  }
 
-
-  nav a{
-    
+  nav a {
     color: white;
     text-decoration: none;
     padding: 20px;
-
-    
   }
-  nav li{
+  nav li {
     display: inline;
-    
   }
-  nav{
+  nav {
     margin: auto 3% 0 0;
-    
   }
 }
-footer{
-    min-height: 50px;
-    background-color: #1b203d;
-    color: white;
-    text-align: center;
-    padding: 0px;
-    
+footer {
+  min-height: 50px;
+  background-color: #1b203d;
+  color: white;
+  text-align: center;
+  padding: 0px;
 }
 
 /*home page*/
 
-.sales img,
-.news img {
-  width: 50px;
+.cta_p {
+  background-color: #1b203d;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 35%;
+  padding: 10px 40px 30px 40px;
+  width: 40px;
+  height: 30px;
+  align-self: center;
+  margin: auto 0 0 0;
+  align-items: center;
+  font-size: 1.3em;
+}
+.two {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px 38px 20px 42px;
+}
+
+@media screen and (max-width: 500px) {
+  .sales img,
+  .news img {
+    max-width: 225px;
+    min-height: 200px;
+  }
+  .slide {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    text-align: center;
+    margin: 0 0 0 20%;
+   
+  }
+  h1 {
+    text-align: center;
+    margin: 30% 0 5% 0;
+  }
+
+  .slide div {
+    padding-right: 15%;
+    background-color: #cccccc;
+    background-clip: content-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #slide2 {
+    margin-bottom: 50px;
+  }
+  .slide div em {
+    text-decoration: line-through red;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  main{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, auto);
+    color: white;
+
+  }
+  .news img{
+    width: 100%;
+    }
+    .sales img{
+      width: 100%;
+    }
+    .slide div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .news{
+      width: 25vw;
+      grid-column: 6/8;
+      grid-row-start: 2;
+      margin: 100px;
+      text-align: center;
+      align-self:baseline;
+      
+      }
+      .furious{
+        margin-top: 200px;
+      }
+      .sales{
+        width:20vw ;
+        grid-column: 3/5;
+        align-self: baseline;
+        grid-row-start: 2;
+        text-align: center;
+      }
+      .super, .black{
+        margin-top: 100px ;
+      }
+      .black{
+        margin-bottom: 50px;
+      }
+      .slide div em {
+        text-decoration: line-through red;
+      }
+
+
 }
