@@ -1,0 +1,138 @@
+@media screen and (max-width: 550px) {
+  header {
+    display: flex;
+    background-color: #1b203d;
+    flex-wrap: nowrap;
+    position: relative;
+    min-height: 100px;
+  }
+
+  .i img {
+    min-width: 150px;
+    max-width: 60%;
+  }
+  .i {
+    width: 50%;
+    flex: 0 0 1;
+    position: absolute;
+    left: 30%;
+  }
+
+  #checkmenu {
+    display: none;
+  }
+  #ham,
+  #a_user {
+    color: white;
+    align-self: flex-end;
+  }
+  #ham {
+    margin: 0 10px 0 auto;
+  }
+  #user {
+    margin: 0 10px 0 0;
+  }
+  #a_user {
+    max-height: 24px;
+    align-items: center;
+  }
+
+  nav {
+    color: white;
+    position: absolute;
+    background-color: #1b203d;
+    display: none;
+    min-width: 100px;
+    min-height: 200px;
+    top: 100%;
+    right: 0%;
+    justify-items: center;
+    padding: 5%;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 10%;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10vh;
+  }
+
+  #checkmenu:checked ~ nav {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 340px) {
+  .i {
+    width: 50%;
+    left: 20%;
+  }
+  header {
+    min-height: 125px;
+  }
+}
+@media screen and (max-width: 340px) {
+    .i {
+      width: 50%;
+      left: 20%;
+    }
+  }
+@media screen and (min-width: 550px) {
+  #ham,#checkmenu,
+  #a_user {
+    display: none;
+  }
+  header {
+    display: flex;
+    background-color: #1b203d;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .i img {
+    max-height: 20vh;
+    width: 100%;
+    display: block;
+}
+ .i{
+    flex-shrink: 0;
+ }
+
+
+  nav a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+    
+  }
+  nav li{
+    display: inline;
+    
+  }
+  nav{
+    margin: auto 3% 0 0;
+    
+  }
+}
+footer{
+    min-height: 50px;
+    background-color: #1b203d;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    
+}
+
+/*home page*/
+
+.sales img,
+.news img {
+  width: 50px;
+}

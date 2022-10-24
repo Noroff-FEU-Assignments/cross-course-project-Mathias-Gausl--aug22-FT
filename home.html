@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
     <title>Game Hub Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+     <div class="i"><a href="home.html"><img src="images/GameHub_Logo.png" alt="Logo" /></a></div> 
+        <input type="checkbox" id="checkmenu" />
+        <label for="checkmenu" id="ham">
+        <i class="fa-solid fa-burger" id="checkbox"></i></label>
+
         <nav>
-            <ul>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <nav><i class="fa-regular fa-user"></i></nav>
-        
+        <a href="user.html" id="a_user"><i class="fa-regular fa-user" id="user"></i></a>
+      </label>
+      
     </header>
     <main>
-        <section class="sales">
-            <h1> Deals </h1>
-            <div class="slide">
-                <div> 
-                    <img src="images/GameHub_covers.jpg" alt="ping pong champion">
-                    <h2> Ping pong champion</h2>
-                    <a href="#">55£ 25£</a>
-                </div>
-                <div> 
-                    <img src="images/GameHub_covers2.jpg" alt="Super Duper">
-                    <h2> Super Duper</h2>
-                    <a href="#">20£ 15£</a>
-                </div>
-                <div> 
-                    <img src="images/GameHub_covers3.jpg" alt="Black">
-                    <h2> black</h2>
-                    <a href="#">30£ 20£</a>
-                </div>
-            </div>
-        </section>
-        <section class="News">
-            <h1> News </h1>
-            <div class="slide2">
-                <div> 
-                    <img src="images/GameHub_covers4.jpg" alt="Assassin">
-                    <h2>Assassin</h2>
-                    <a href="#">55£</a>
-                </div>
-                <div> 
-                    <img src="images/GameHub_covers5.jpg" alt="Furious">
-                    <h2>Furious</h2>
-                    <a href="#">55£</a>
-                </div>
-            </div>
-        </section>
+      <section class="sales">
+        <h1>Deals</h1>
+        <div class="slide">
+          <div>
+            <img src="images/GameHub_covers.jpg" alt="ping pong champion" />
+            <h2>Ping pong champion</h2>
+            <a href="#">55£ 25£</a>
+          </div>
+          <div>
+            <img src="images/GameHub_covers2.jpg" alt="Super Duper" />
+            <h2>Super Duper</h2>
+            <a href="#">20£ 15£</a>
+          </div>
+          <div>
+            <img src="images/GameHub_covers3.jpg" alt="Black" />
+            <h2>black</h2>
+            <a href="#">30£ 20£</a>
+          </div>
+        </div>
+
+      <section class="news">
+        <h1>News</h1>
+        <div class="slide2">
+          <div>
+            <img src="images/GameHub_covers4.jpg" alt="Assassin" />
+            <h2>Assassin</h2>
+            <a href="#">55£</a>
+          </div>
+          <div>
+            <img src="images/GameHub_covers5.jpg" alt="Furious" />
+            <h2>Furious</h2>
+            <a href="#">55£</a>
+          </div>
+        </div>
+      </section>
     </main>
-   <footer>
-    copyright &copy;
-   </footer> 
-</body>
+    <footer>copyright &copy;</footer>
+  </body>
 </html>
