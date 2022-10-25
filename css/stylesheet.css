@@ -12,7 +12,7 @@ header{
   font-family: "dosis", "helvetica";
 }
 h1,
-h3 {
+h2 {
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
 }
@@ -129,10 +129,8 @@ footer {
     display: flex;
     background-color: #1b203d;
     min-height: 150px;
-    justify-content: center;
     align-items: center;
     position: relative;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
@@ -157,12 +155,6 @@ footer {
     margin: auto 3% 0 0;
   }
 }
-
-
-/*home page*/
-
-
-
 .cta_p {
   display: flex;
   flex-direction: column;
@@ -171,29 +163,43 @@ footer {
   border-radius: 35%;
   width: 10vw;
   height: 8vh;
-  margin: 0 auto;
+  margin: 4vh auto;
   font-size: 1.2em;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   align-self: center;
+  border: 1.5px solid white;
+  
+  
+  }
+  .cta_p:hover{
+    background-color: #ffffff;
+    color: #1b203d;
   }
   @media screen and (max-width: 650px) {
     .cta_p {
       width: 12vw;
       height: 10vh;
      }
-    
   }
- 
+  @media screen and (max-width: 500px){
+    .cta_p {
+      width: 20vw;
+      height: 12vh;
+      margin: 0 auto;
+     }
+     header{
+      justify-content: space-evenly;
+     }
+    }
 
+
+/*home page*/
 
 @media screen and (max-width: 500px) {
 
-  .cta_p {
-    width: 20vw;
-    height: 14vh;
-   }
+
    
   .sales img,
   .news img {
@@ -281,8 +287,7 @@ footer {
         text-decoration: line-through red;
       }
 
-
-}
+    }
 /*products*/
 .games_card em{
   text-decoration: line-through red;
@@ -317,12 +322,16 @@ footer {
   }
 }
   @media screen and (min-width: 501px){
-    
+
+  
     .products_main{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, auto);
       column-gap: 8%;
+      }
+      .games_card h3{
+        height: 0%;
       }
     
     .products_main h1{
@@ -340,8 +349,8 @@ footer {
       width: 20vw;
       text-align: center;
       margin: 50px auto;
+      }
       
-    }
     
     .ping_pong{
       grid-column: 2/3;
