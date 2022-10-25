@@ -4,15 +4,11 @@
   font-family: "dosis";
   src: url(/fonts/Dosis-Medium.ttf) format("tff");
 }
-body {
-  background-image: url(/images/bck.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center top;
-  margin: 0 0 ;
+header{
+  width: 100%;
 }
 
-* {
+ * {
   font-family: "dosis", "helvetica";
 }
 h1,
@@ -24,6 +20,24 @@ nav li {
   font-family: "kontakt", "times-new roman";
 }
 
+body {
+  background-image: url(/images/bck.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  margin: 0 0 ;
+}
+footer {
+  display: flex;
+  min-height: 50px;
+  background-color: #1b203d;
+  color: white;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media screen and (max-width: 500px) {
   header {
     display: flex;
@@ -31,6 +45,7 @@ nav li {
     flex-wrap: nowrap;
     position: relative;
     min-height: 100px;
+    
     
   }
 
@@ -52,6 +67,7 @@ nav li {
   #a_user {
     color: white;
     align-self: flex-end;
+    
   }
   #ham {
     margin: 0 10px 0 auto;
@@ -141,36 +157,44 @@ nav li {
     margin: auto 3% 0 0;
   }
 }
-footer {
-  min-height: 50px;
-  background-color: #1b203d;
-  color: white;
-  text-align: center;
-  padding: 0px;
-}
+
 
 /*home page*/
 
+
+
 .cta_p {
+  display: flex;
+  flex-direction: column;
   background-color: #1b203d;
-  text-decoration: none;
   color: #ffffff;
   border-radius: 35%;
-  padding: 10px 40px 30px 40px;
-  width: 40px;
-  height: 30px;
-  align-self: center;
-  margin: auto 0 0 0;
+  width: 10vw;
+  height: 8vh;
+  margin: 0 auto;
+  font-size: 1.2em;
+  justify-content: center;
   align-items: center;
-  font-size: 1.3em;
-}
-.two {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding: 20px 38px 20px 42px;
-}
+  text-decoration: none;
+  align-self: center;
+  }
+  @media screen and (max-width: 650px) {
+    .cta_p {
+      width: 12vw;
+      height: 10vh;
+     }
+    
+  }
+ 
+
 
 @media screen and (max-width: 500px) {
+
+  .cta_p {
+    width: 20vw;
+    height: 14vh;
+   }
+   
   .sales img,
   .news img {
     max-width: 225px;
@@ -218,12 +242,10 @@ footer {
     color: white;
 
   }
-  .news img{
+  .news, sales img{
     width: 100%;
     }
-    .sales img{
-      width: 100%;
-    }
+   
     .slide div {
       display: flex;
       flex-direction: column;
@@ -260,4 +282,103 @@ footer {
       }
 
 
+}
+/*products*/
+.games_card em{
+  text-decoration: line-through red;
+}
+
+@media screen and (max-width: 500px) {
+  .poducts_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .games_card img{
+    max-width: 100%;
+  }
+  .games_card{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #cccccc;
+    margin: 50px auto;
+  }
+ 
+  .games_card a{
+    text-align: center;
+  }
+  .body_products{
+    background-repeat:repeat-y;
+    background-size: 250%;
+    background-color: #1b203d;
+    background-position: center;
+  }
+}
+  @media screen and (min-width: 501px){
+    
+    .products_main{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, auto);
+      column-gap: 8%;
+      }
+    
+    .products_main h1{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        margin: 100px auto 0 auto;
+        
+    }
+    .games_card img{
+      max-width: 100%;
+    }
+    .games_card{
+      display: flex;
+      flex-direction: column;
+      width: 20vw;
+      text-align: center;
+      margin: 50px auto;
+      
+    }
+    
+    .ping_pong{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    
+    .black{
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+    .super_duper{
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+    .boxer{
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+   
+    .forge_legend{
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+   
+    .furious{
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+   
+    .assassin{
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+   
+   
+
+    
+ 
+  
 }
