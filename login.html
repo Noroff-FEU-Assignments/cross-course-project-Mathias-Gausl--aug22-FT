@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  <title>Login/signup </title>
+</head>
+<body>
+    <header>
+        <div class="i"><a href="home.html"><img src="images/GameHub_Logo.png" alt="Logo" /></a></div> 
+           <input type="checkbox" id="checkmenu" />
+           <label for="checkmenu" id="ham">
+           <i class="fa-solid fa-burger" id="checkbox"></i></label>
+           <nav>
+             <ul>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="used.html">Used games</a></li>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="about.html">About us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+             </ul>
+           </nav>
+           <a href="user.html" id="a_user"><i class="fa-regular fa-user" id="user"></i></a>
+         </label>
+       </header>
+       <main>
+          <form action="submit.php" method="post" class="login">
+            <h1>Login</h1>
+           <div><label for="email">Email</label>
+            <input type="text" name="email" required>
+          </div> 
+            <div><label for="password">Password</label>
+            <input type="text"name="password" required >
+          </div>
+           <div class="sub">
+            <input type="submit" value="Login" class="log_button">
+            <a href="signup.html">Or Sign Up <em>HERE</em></a>
+           </div> 
+          </form>
+        </main>
+       <footer>copyright &copy;</footer>   
+</body>
+</html>

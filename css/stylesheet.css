@@ -26,15 +26,17 @@ body {
   background-size: 100% 100%;
   background-position: center top;
   margin: 0 0 ;
+ 
 }
 footer {
   display: flex;
-  min-height: 50px;
+  min-height: 75px;
   background-color: #1b203d;
   color: white;
   padding: 0px;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 
@@ -114,12 +116,10 @@ footer {
   header {
     min-height: 125px;
   }
-  .i {
-    width: 50%;
-    left: 20%;
-  }
+  
 }
 @media screen and (min-width: 501px) {
+
   #ham,
   #checkmenu,
   #a_user {
@@ -215,11 +215,10 @@ footer {
     scroll-behavior: smooth;
     text-align: center;
     margin: 0 0 0 20%;
-   
   }
   h1 {
-    text-align: center;
-    margin: 30% 0 5% 0;
+    width: fit-content;
+    margin: 100px auto 30px auto;    
   }
 
   .slide div {
@@ -240,14 +239,15 @@ footer {
 }
 
 @media screen and (min-width: 501px) {
-  main{
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, auto);
-    color: white;
 
+  .home_main{
+    display: grid;
+    column-gap: 8%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    color: white;
   }
+
   .news, sales img{
     width: 100%;
     }
@@ -288,7 +288,7 @@ footer {
       }
 
     }
-/*products*/
+/*products and Used games page*/
 .games_card em{
   text-decoration: line-through red;
 }
@@ -323,21 +323,27 @@ footer {
 }
   @media screen and (min-width: 501px){
 
-  
-    .products_main{
+    .products, .used{
       display: grid;
+      column-gap: 4%;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, auto);
-      column-gap: 8%;
-      }
+      color: white;
+      row-gap: 1%;
+      
+    }
+    
+
+
       .games_card h3{
         height: 0%;
       }
     
-    .products_main h1{
-        grid-column: 1/-1;
+    .products h1, .used h1{
+        grid-column: 3/4;
         grid-row: 1/2;
         margin: 100px auto 0 auto;
+        width: fit-content;
         
     }
     .games_card img{
@@ -351,17 +357,16 @@ footer {
       margin: 50px auto;
       }
       
-    
-    .ping_pong{
+    .ping_pong, .space{
       grid-column: 2/3;
       grid-row: 2/3;
     }
     
-    .black{
+    .black, .racing{
       grid-column: 3/4;
       grid-row: 2/3;
     }
-    .super_duper{
+    .super_duper, .cyber{
       grid-column: 4/5;
       grid-row: 2/3;
     }
@@ -383,11 +388,99 @@ footer {
     .assassin{
       grid-column: 2/3;
       grid-row: 4/5;
+      
     }
-   
-   
+  }
+  /*login page and signup page*/
+  .login h1{
+    margin-top: 8%;
+   }
+  
 
-    
+  .login{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  overflow: scroll;
+  align-items: center;
+  
+
+}
+.login div{
+  margin: 5%;
  
+  
+}
+.login div label{
+  display: block;
+  margin-bottom: 2%;
+  
+}
+.login input:focus{
+  border: 5px solid;
+  background-color: white;
+  color: black;
+  text-align: left;
+  
+}
+.sub{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+ 
+  
+}
+.sub a{
+  margin-top: 30%;
+  text-decoration: none;
+  color: white;
+  font-size:1.2em ;
+}
+.sub em{
+  color: red;
+}
+
+.login input{
+  background-color: #1b203d;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20%;
+  height: 25px;
+  text-align: center;
+  }
+  .log_button{
+    width: 100px;
+    background-color: #1b203d;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 20%;
+    }
+    #email{
+      max-width: 150px;
+      }
+      #email_box{
+        display: flex;
+        
+      }
+      #email_box input{
+        height: 18px;
+        width: 18px;
+      }
+
+@media screen and (min-width: 1000px) {
+
+  .login{
+    overflow: hidden;
+  }
+
+ .log_button{
+  width: 125px;
+  }
+.login input{
+  height: 40px;
+}
   
 }
