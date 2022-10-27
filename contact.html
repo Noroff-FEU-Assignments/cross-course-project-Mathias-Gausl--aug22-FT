@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <title>Game Hub about us</title>
+</head>
+<body>
+<header>
+    <div class="i"><a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo" /></a></div> 
+       <input type="checkbox" id="checkmenu" />
+       <label for="checkmenu" id="ham">
+       <i class="fa-solid fa-burger" id="checkbox"></i></label>
+       <nav>
+         <ul>
+           <li><a href="products.html">Products</a></li>
+           <li><a href="used.html">Used games</a></li>
+           <li><a href="login.html">Login</a></li>
+           <li><a href="about.html">About us</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+       </nav>
+       <a href="login.html" id="a_user"><i class="fa-regular fa-user" id="user"></i></a>
+     </label>
+   </header>
+   <main class="main_contact">
+    <h1>Contact Us</h1>
+    <section class="p_contact">
+        <div >
+            <p>
+                Our customer service is open mondays-fridays 
+                9-17 you can reach us on both phone and email
+            </p>
+            <ul>
+             <li> Email: Gamehubsupport@gmail.com</li> 
+             <li> Phone: 99998888</li> 
+             <li> Address: example street 2, 4815 Arendal</li> 
+            </ul>
+        </div>
+    </section>
+    <section class="p_contact">
+        <div>
+            <p>Or send us a direct message and we will answer on your Email:</p>
+        </div>
+        <form action="submit.php" method="post" class="login contact_form">
+        <div class="form_email">
+            <label for="email_contact">Email</label>
+            <input type="text" name="email_contact">
+        </div>
+        <div class="form_name">
+            <label for="name_contact">Full Name</label>
+            <input type="text" name="name_contact">
+        </div>
+        <div class="options">
+        <label for="is_about">What is this about?</label>
+        <select name="is_about" id="options">
+            <option value="refund">I want a refunnd</option>
+            <option value="sell">I want to sell a game</option>
+            <option value="install">I can't install the game</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="textbox">
+        <label for="write_us">Your message here:</label>
+        <textarea name="write_us" id="write" cols="30" rows="10"></textarea>
+    </div>
+    <div class="send_contact">
+        <input type="submit" value="Send" class="log_button" id="send_contact">
+    </div>
+    </form>
+    </section>
+
+</main>
+<footer>copyright &copy;</footer> 
+</body>
+</html>
