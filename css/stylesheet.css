@@ -642,6 +642,10 @@ footer {
   width: 20vw;
   height: 7vh;
 }
+.cart p em{
+  text-decoration: line-through red solid;
+  margin: 1ch;
+}
 @media (min-width: 1000px){
   .checkout_main{
     display: grid;
@@ -695,6 +699,27 @@ footer {
     grid-row: 5/6;
   }
 }
+/*checkout finish page*/
+.main_success {
+  height: 100vh;
+}
+.main_success h1{
+  margin:  8% auto 4% auto;
+  width: fit-content;
+  color: lime;
+}
+
+.thx{
+  color: white;
+  max-width: 250px;
+  align-self: center;
+  margin: 0 auto;
+}
+/*message recived page*/
+.message h1{
+  color: white;
+}
+
 
 
 
