@@ -413,7 +413,7 @@ footer {
 
 }
 .login div{
-  margin: 5%;
+  margin: 3%;
  
   
 }
@@ -585,7 +585,7 @@ footer {
   margin: 0 auto 50px auto ;
   color: #ffffff;
 }
-.buy{
+.buy, #checkout{
   background-color: green;
   font: bold;
   border: 5px solid black;
@@ -593,8 +593,12 @@ footer {
 .buy em{
   text-decoration: red solid line-through;
 }
-.buy:hover{
+.buy, #checkout:hover{
   background-color: lime;
+}
+.consol{
+  min-width: 70px;
+  min-height: 40px;
 }
 
 @media (min-width: 1000px) {
@@ -620,5 +624,83 @@ footer {
       }
   
 }
+/* checkout page*/
+.cart{
+  color:#ffffff;
+  font-size: 1.5em;
+  background-color: #1b203d;
+  border: #ffffff solid 2px;
+  width: fit-content;
+  padding: 2%;
+  margin: 20px auto;
+}
+.checkout_main h1{
+  margin: 8% auto;
+  width: fit-content;
+}
+#checkout{
+  width: 20vw;
+  height: 7vh;
+}
+@media (min-width: 1000px){
+  .checkout_main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto);
+    row-gap: 20px;
+    column-gap: 40px;
+   
+  }
+  .checkout_main h1{
+    grid-column: 1/5;
+  }
+  .cart{
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .information{
+    grid-column: 2/3;
+  }
+  
+  .payment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-column: 2/4;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .payment h2{
+    grid-row: 1/2;
+  }
+  .inf{
+    grid-column: 1/2;
+  }
+  .pay{
+    grid-column: 2/3;
+  }
+  .checkout_cta{
+    grid-column: 1/4;
+  }
+  .cn{
+    grid-row: 2/3;
+  }
+  .exp{
+    grid-row: 3/4;
+  }
+  .cvc{
+    grid-row: 4/5;
+  }
+  .pin{
+    grid-row: 5/6;
+  }
+}
+
+
+
+
+
+
+
 
 
