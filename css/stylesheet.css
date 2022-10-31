@@ -4,24 +4,27 @@
   font-family: "dosis";
   src: url(/fonts/Dosis-Medium.ttf) format("tff");
 }
-header{
-  width: 100%;
-}
+
+
 
  * {
   font-family: "dosis", "helvetica";
+  
 }
-h1{
-  margin-top: 8%;
-}
-
-h1,
-h2 {
+h1, div h1, section h1{
+  margin: 8% auto 20px auto;
+  font-size: 2em;
+  max-width: fit-content;
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
 }
+
+
 nav li {
   font-family: "kontakt", "times-new roman";
+}
+p::first-letter {
+  text-transform: uppercase;
 }
 
 body {
@@ -29,7 +32,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center top;
-  margin: 0 0 ;
+  margin: 0px;
+  
+ 
+  
  
 }
 footer {
@@ -51,6 +57,8 @@ footer {
     flex-wrap: nowrap;
     position: relative;
     min-height: 100px;
+    margin: 0 0 auto 0;
+    
     }
     h1 {
       width: fit-content;
@@ -136,8 +144,8 @@ footer {
     background-color: #1b203d;
     min-height: 150px;
     align-items: center;
-    position: relative;
     flex-direction: column;
+    
   }
 
   .i img {
@@ -195,18 +203,15 @@ footer {
       height: 12vh;
       margin: 0 auto;
      }
-     header{
-      justify-content: space-evenly;
-     }
+    
     }
 
 
 /*home page*/
 
+
 @media screen and (max-width: 500px) {
 
-
-   
   .sales img,
   .news img {
     max-width: 225px;
@@ -222,6 +227,11 @@ footer {
     text-align: center;
     margin: 0 0 0 20%;
   }
+  .sales, .news{
+    margin-bottom: 30%;
+    margin-top: 30%;
+  }
+
   
 
   .slide div {
@@ -249,6 +259,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, auto);
     color: white;
+  
   }
 
   .news, sales img{
@@ -335,20 +346,14 @@ footer {
       row-gap: 1%;
       
     }
-    
-
-
-      .games_card h3{
+     .games_card h3{
         height: 0%;
       }
     
     .products h1, .used h1{
-        grid-column: 3/4;
+        grid-column: 1/6;
         grid-row: 1/2;
-        margin: 100px auto 0 auto;
-        width: fit-content;
-        
-    }
+      }
     .games_card img{
       max-width: 100%;
     }
@@ -507,10 +512,7 @@ footer {
   }
 /*contact page*/
 
-.main_contact h1{
-  justify-self: center;
-  width: fit-content;
-}
+
 
 #options, #write {
   background-color: #1b203d;
@@ -593,7 +595,7 @@ footer {
 .buy em{
   text-decoration: red solid line-through;
 }
-.buy, #checkout:hover{
+#checkout:hover{
   background-color: lime;
 }
 .consol{
@@ -653,6 +655,7 @@ footer {
     grid-template-rows: repeat(4,auto);
     row-gap: 20px;
     column-gap: 40px;
+    justify-content: center;
    
   }
   .checkout_main h1{
@@ -670,7 +673,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8,1fr);
-    grid-column: 2/4;
+    grid-column: 1/5;
     row-gap: 20px;
     column-gap: 20px;
   }
@@ -718,9 +721,8 @@ footer {
 /*message recived page*/
 .message h1{
   color: white;
+  margin-bottom: 40px;
 }
-
-
 
 
 
