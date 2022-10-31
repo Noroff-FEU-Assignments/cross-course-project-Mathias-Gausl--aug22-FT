@@ -9,7 +9,6 @@
 
  * {
   font-family: "dosis", "helvetica";
-  
 }
 h1, div h1, section h1{
   margin: 8% auto 20px auto;
@@ -17,6 +16,13 @@ h1, div h1, section h1{
   max-width: fit-content;
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
+}
+nav a:hover, :focus {
+  background-color: white;
+  color: black;
+}
+.current_on{
+  text-decoration: underline;
 }
 
 
@@ -33,10 +39,6 @@ body {
   background-size: 100% 100%;
   background-position: center top;
   margin: 0px;
-  
- 
-  
- 
 }
 footer {
   display: flex;
@@ -187,7 +189,7 @@ footer {
   
   
   }
-  .cta_p:hover{
+  .cta_p:hover, :focus{
     background-color: #ffffff;
     color: #1b203d;
   }
