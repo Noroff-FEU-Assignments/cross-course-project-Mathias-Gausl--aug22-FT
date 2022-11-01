@@ -721,9 +721,16 @@ footer {
   margin: 0 auto;
 }
 /*message recived page*/
+
 .message h1{
   color: white;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 500px){
+  .continue{
+    min-width: 30vw;
+    max-height: 10vh;
+  }
 }
 
 
