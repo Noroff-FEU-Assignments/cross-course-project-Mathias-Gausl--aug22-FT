@@ -142,6 +142,7 @@ footer {
     min-height: 150px;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .i img {
@@ -246,16 +247,11 @@ footer {
   .home_main {
     display: grid;
     column-gap: 8%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     color: white;
+    justify-items: center;
   }
-
-  .news,
-  sales img {
-    width: 100%;
-  }
-
   .slide div {
     display: flex;
     flex-direction: column;
@@ -264,7 +260,7 @@ footer {
 
   .news {
     width: 25vw;
-    grid-column: 6/8;
+    grid-column: 2/3;
     grid-row-start: 2;
     margin: 100px;
     text-align: center;
@@ -275,7 +271,7 @@ footer {
   }
   .sales {
     width: 20vw;
-    grid-column: 3/5;
+    grid-column: 1/2;
     align-self: baseline;
     grid-row-start: 2;
     text-align: center;
@@ -640,7 +636,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
-    grid-column: 1/5;
+    grid-column: 2/4;
     row-gap: 20px;
     column-gap: 20px;
   }
