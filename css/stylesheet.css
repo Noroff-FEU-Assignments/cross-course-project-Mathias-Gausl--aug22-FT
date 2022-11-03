@@ -605,8 +605,8 @@ footer {
   width: fit-content;
 }
 #checkout {
-  width: 20vw;
-  height: 7vh;
+  width: 150px;
+  height: 40px;
 }
 .cart p em {
   text-decoration: line-through red solid;
