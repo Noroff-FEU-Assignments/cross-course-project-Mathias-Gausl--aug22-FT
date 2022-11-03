@@ -55,10 +55,10 @@ footer {
   header {
     display: flex;
     background-color: #1b203d;
-    flex-wrap: nowrap;
     position: relative;
-    min-height: 100px;
+    min-height: 80px;
     margin: 0 0 auto 0;
+    flex-direction: column;
   }
   h1 {
     width: fit-content;
@@ -66,14 +66,12 @@ footer {
   }
 
   .i img {
-    min-width: 150px;
-    max-width: 60%;
+   width: 100%;
   }
   .i {
     width: 50%;
-    flex: 0 0 1;
-    position: absolute;
-    left: 30%;
+   margin: 0 auto;
+    
   }
 
   #checkmenu {
@@ -82,18 +80,15 @@ footer {
   #ham,
   #a_user {
     color: white;
+    padding-left: 10px;
+    
+  }
+  .nav_mobile{
     align-self: flex-end;
+    margin: 0 10px;
   }
-  #ham {
-    margin: 0 10px 0 auto;
-  }
-  #user {
-    margin: 0 15px 0 0;
-  }
-  #a_user {
-    max-height: 24px;
-    align-items: center;
-  }
+  
+  
 
   nav {
     color: white;
@@ -121,15 +116,7 @@ footer {
     display: inline-block;
   }
 }
-@media screen and (max-width: 340px) {
-  .i {
-    width: 50%;
-    left: 20%;
-  }
-  header {
-    min-height: 125px;
-  }
-}
+
 @media screen and (min-width: 501px) {
   #ham,
   #checkmenu,
@@ -140,9 +127,9 @@ footer {
     display: flex;
     background-color: #1b203d;
     min-height: 150px;
-    align-items: center;
     flex-direction: column;
     overflow: hidden;
+    flex-wrap: nowrap;
   }
 
   .i img {
@@ -152,6 +139,9 @@ footer {
   }
   .i {
     flex-shrink: 0;
+    max-width: 50%;
+    align-self: center;
+    margin-bottom: 10px;
   }
 
   nav a {
@@ -162,9 +152,11 @@ footer {
   nav li {
     display: inline;
   }
-  nav {
-    margin: auto 3% 0 0;
+  ul{
+    width: fit-content;
+    margin: 1% auto;
   }
+ 
 }
 .cta_p {
   display: flex;
