@@ -1,8 +1,10 @@
 @font-face {
   font-family: "kontakt";
-  src: url(/fonts/Kontakt.ttf) format("tff");
+  src: url("/fonts/Kontakt.ttf") format("truetype");
+  }
+  @font-face{
   font-family: "dosis";
-  src: url(/fonts/Dosis-Medium.ttf) format("tff");
+  src: url("/fonts/Dosis-Medium.ttf") format("truetype");
 }
 
 * {
