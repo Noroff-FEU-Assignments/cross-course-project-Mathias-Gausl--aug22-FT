@@ -617,7 +617,7 @@ header {
 
   .checkout_main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     row-gap: 20px;
     column-gap: 40px;
@@ -641,6 +641,7 @@ header {
     grid-column: 2/4;
     row-gap: 20px;
     column-gap: 20px;
+    width: 400px;
   }
   .payment h2 {
     grid-row: 1/2;
