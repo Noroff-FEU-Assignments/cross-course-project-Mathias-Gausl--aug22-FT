@@ -18,6 +18,9 @@ section h1 {
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
 }
+main{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 nav a:hover,
 :focus {
   background-color: white;
