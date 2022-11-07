@@ -18,7 +18,7 @@ section h1 {
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
 }
-main{
+body{
   background-color: rgba(0, 0, 0, 0.2);
 }
 nav a:hover,
