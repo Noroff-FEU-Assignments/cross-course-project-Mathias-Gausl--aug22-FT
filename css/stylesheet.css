@@ -18,9 +18,7 @@ section h1 {
   font-family: "kontakt", "times-new roman";
   color: #ffffff;
 }
-body{
-  background-color: rgba(0, 0, 0, 0.2);
-}
+
 nav a:hover,
 :focus {
   background-color: white;
@@ -46,6 +44,7 @@ body {
   background-size: 100% 100%;
   background-position: center top;
   margin: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 footer {
   display: flex;
