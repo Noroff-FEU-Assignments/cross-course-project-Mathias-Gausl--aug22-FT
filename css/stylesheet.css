@@ -278,7 +278,7 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   /*general*/
 
   h1 {
@@ -402,7 +402,7 @@ header {
     max-height: 10vh;
   }
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 601px) {
   /*general*/
 
   #ham,
