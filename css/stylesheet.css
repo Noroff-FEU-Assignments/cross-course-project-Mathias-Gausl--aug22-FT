@@ -1,0 +1,673 @@
+@font-face {
+  font-family: "kontakt";
+  src: url("/fonts/Kontakt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "dosis";
+  src: url("/fonts/Dosis-Medium.ttf") format("truetype");
+}
+* {
+  font-family: "dosis", "helvetica";
+}
+h1,
+div h1,
+section h1 {
+  margin: 8% auto 20px auto;
+  font-size: 2em;
+  max-width: fit-content;
+  font-family: "kontakt", "times-new roman";
+  color: #ffffff;
+}
+
+nav a:hover,
+:focus {
+  background-color: white;
+  color: black;
+}
+.cta_p:hover,
+  :focus {
+    background-color: #ffffff;
+    color: #1b203d;
+  }
+.current_on {
+  text-decoration: underline;
+}
+nav li {
+  font-family: "kontakt", "times-new roman";
+}
+p::first-letter {
+  text-transform: uppercase;
+}
+body {
+  background-image: url(/images/bck.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer {
+  display: flex;
+  min-height: 75px;
+  background-color: #1b203d;
+  color: white;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+ 
+}
+.cta_p {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b203d;
+  color: #ffffff;
+  border-radius: 35%;
+  width: 120px;
+  height: 60px;
+  margin: 4vh auto;
+  font-size: 1.2em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  align-self: center;
+  border: 1.5px solid white;
+}
+header {
+  display: flex;
+  background-color: #1b203d;
+  position: relative;
+  min-height: 80px;
+  margin: 0 0 auto 0;
+  flex-direction: column;
+}
+/*home page*/
+
+.slide a em {
+  text-decoration: line-through red;
+}
+/*products and Used games page*/
+
+.games_card em {
+  text-decoration: line-through red;
+}
+/*login page and signup page*/
+
+.login_main {
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  overflow: scroll;
+  align-items: center;
+}
+.login div {
+  margin: 3%;
+}
+.login div label {
+  display: block;
+  margin-bottom: 2%;
+}
+.login input:focus {
+  border: 5px solid;
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+.sub {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+}
+.sub a {
+  margin-top: 30%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+.sub em {
+  color: red;
+}
+
+.login input {
+  background-color: #1b203d;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20%;
+  height: 25px;
+  text-align: center;
+}
+.log_button {
+  width: 100px;
+  background-color: #1b203d;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 20%;
+}
+#email_box {
+  display: flex;
+  
+}
+#email_box input {
+  max-height: 18px;
+  max-width: 18px;
+ 
+}
+
+/*about us page*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about div {
+  margin: 50px 50px;
+  color: white;
+  height: 100vh;
+  max-width: 500px;
+  align-self: center;
+}
+.about h1 {
+  align-self: center;
+}
+/*contact page*/
+
+#options,
+#write {
+  background-color: #1b203d;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.main_contact {
+  color: #ffffff;
+  display: grid;
+}
+.p_contact {
+  max-width: 500px;
+  margin: 20px 8% 10% 8%;
+  justify-self: center;
+}
+.p_contact ul {
+  padding: 1ch;
+}
+
+/*game info*/
+
+.main_fur img {
+  width: 100%;
+}
+.main_fur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game_info,
+.game_stats {
+  max-width: 350px;
+  width: 50vw;
+  margin: 0 auto 50px auto;
+  color: #ffffff;
+}
+.buy,
+#checkout {
+  background-color: green;
+  font: bold;
+  border: 5px solid black;
+}
+.buy em {
+  text-decoration: red solid line-through;
+}
+#checkout:hover {
+  background-color: lime;
+}
+.consol {
+  min-width: 70px;
+  min-height: 40px;
+}
+/* checkout page*/
+
+.cart {
+  color: #ffffff;
+  font-size: 1.5em;
+  background-color: #1b203d;
+  border: #ffffff solid 2px;
+  width: fit-content;
+  padding: 2%;
+  margin: 20px auto;
+}
+.checkout_main h1 {
+  margin: 8% auto;
+  width: fit-content;
+}
+#checkout {
+  width: 150px;
+  height: 40px;
+}
+.cart p em {
+  text-decoration: line-through red solid;
+  margin: 1ch;
+}
+/*checkout finish page*/
+
+.main_success {
+  height: 100vh;
+}
+.main_success h1 {
+  margin: 8% auto 4% auto;
+  width: fit-content;
+  color: lime;
+}
+
+.thx {
+  color: white;
+  max-width: 250px;
+  align-self: center;
+  margin: 0 auto;
+}
+/*message recived page*/
+
+.message h1 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  /*general*/
+
+  h1 {
+    width: fit-content;
+    margin: 100px auto 30px auto;
+  }
+  .i img {
+    width: 100%;
+  }
+  .i {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #checkmenu {
+    display: none;
+  }
+  #ham,
+  #a_user {
+    color: white;
+    padding-left: 10px;
+  }
+  .nav_mobile {
+    align-self: flex-end;
+    margin: 0 10px;
+  }
+  nav {
+    color: white;
+    position: absolute;
+    background-color: #1b203d;
+    display: none;
+    min-width: 100px;
+    min-height: 200px;
+    top: 100%;
+    right: 0%;
+    justify-items: center;
+    padding: 5%;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 10%;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10vh;
+  }
+
+  #checkmenu:checked ~ nav {
+    display: inline-block;
+  }
+  .cta_p {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  /*home page*/
+
+  .sales img,
+  .news img {
+    max-width: 225px;
+    min-height: 200px;
+  }
+  .slide {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    text-align: center;
+    margin: 0 0 0 20%;
+  }
+  .sales,
+  .news {
+    margin-bottom: 30%;
+    margin-top: 30%;
+  }
+  .slide div {
+    padding-right: 15%;
+    background-color: #cccccc;
+    background-clip: content-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #slide2 {
+    margin-bottom: 50px;
+  }
+  /*products and used*/
+
+  .poducts_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .games_card img {
+    max-width: 100%;
+  }
+  .games_card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #cccccc;
+    margin: 50px auto;
+  }
+
+  .games_card a {
+    text-align: center;
+  }
+  .body_products {
+    background-repeat: repeat-y;
+    background-size: 250%;
+    background-color: #1b203d;
+    background-position: center;
+  }
+  /*message recived page*/
+
+  .continue {
+    min-width: 30vw;
+    max-height: 10vh;
+  }
+}
+@media screen and (min-width: 601px) {
+  /*general*/
+
+  #ham,
+  #checkmenu,
+  #a_user {
+    display: none;
+  }
+  header {
+    min-height: 150px;
+    overflow: hidden;
+    }
+  .i img {
+    max-height: 20vh;
+    width: 100%;
+    display: block;
+  }
+  .i {
+    flex-shrink: 0;
+    max-width: 50%;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+  nav li {
+    display: inline;
+  }
+  ul {
+    width: fit-content;
+    margin: 1% auto;
+  }
+  
+  /*home page*/
+
+  .home_main {
+    display: grid;
+    column-gap: 8%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    color: white;
+    justify-items: center;
+  }
+  .slide div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .news {
+    width: 25vw;
+    grid-column: 2/3;
+    grid-row-start: 2;
+    margin: 100px;
+    text-align: center;
+    align-self: baseline;
+  }
+  .furious {
+    margin-top: 200px;
+  }
+  .sales {
+    width: 20vw;
+    grid-column: 1/2;
+    align-self: baseline;
+    grid-row-start: 2;
+    text-align: center;
+  }
+  .super,
+  .black {
+    margin-top: 100px;
+  }
+  .black {
+    margin-bottom: 50px;
+  }
+  /*products ad used*/
+
+  .products,
+  .used {
+    display: grid;
+    column-gap: 4%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    color: white;
+    row-gap: 1%;
+  }
+  .games_card h3 {
+    height: 0%;
+  }
+
+  .products h1,
+  .used h1 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .games_card img {
+    max-width: 100%;
+  }
+  .games_card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .ping_pong,
+  .space {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .black,
+  .racing {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .super_duper,
+  .cyber {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .boxer {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .forge_legend {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  .furious {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+
+  .assassin {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /*login and sigup*/
+
+  .login {
+    overflow: hidden;
+  }
+
+  .log_button {
+    width: 125px;
+  }
+  .login input {
+    height: 40px;
+  }
+  /*contact*/
+
+  .contact_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+  }
+  .send_contact {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+  .form_name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .textbox {
+    grid-row: 1/4;
+    grid-column: 2/3;
+  }
+  .options {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #options {
+    height: 44px;
+  }
+  #write {
+    height: 300px;
+    width: 160px;
+  }
+  /*game info*/
+
+  .main_fur {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, auto, 1fr;
+    justify-content: center;
+    column-gap: 100px;
+  }
+  .game_info {
+    grid-column: 1/2;
+  }
+  .game_stats {
+    grid-column: 2/3;
+  }
+  .buy_cta {
+    grid-column: 1/3;
+  }
+  .main_fur h1 {
+    grid-column: 1/3;
+    margin: 100px auto 50px auto;
+  }
+  /*checkout page*/
+
+  .checkout_main {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    row-gap: 20px;
+    column-gap: 40px;
+    justify-content: center;
+  }
+  .checkout_main h1 {
+    grid-column: 1/5;
+  }
+  .cart {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .information {
+    grid-column: 2/3;
+  }
+
+  .payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column: 2/4;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 400px;
+  }
+  .payment h2 {
+    grid-row: 1/2;
+  }
+  .inf {
+    grid-column: 1/2;
+  }
+  .pay {
+    grid-column: 2/3;
+  }
+  .checkout_cta {
+    grid-column: 1/4;
+  }
+  .cn {
+    grid-row: 2/3;
+  }
+  .exp {
+    grid-row: 3/4;
+  }
+  .cvc {
+    grid-row: 4/5;
+  }
+  .pin {
+    grid-row: 5/6;
+  }
+}
