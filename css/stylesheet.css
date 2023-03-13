@@ -25,10 +25,10 @@ nav a:hover,
   color: black;
 }
 .cta_p:hover,
-  :focus {
-    background-color: #ffffff;
-    color: #1b203d;
-  }
+:focus {
+  background-color: #ffffff;
+  color: #1b203d;
+}
 .current_on {
   text-decoration: underline;
 }
@@ -55,7 +55,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
- 
 }
 .cta_p {
   display: flex;
@@ -80,11 +79,28 @@ header {
   min-height: 80px;
   margin: 0 0 auto 0;
   flex-direction: column;
+  align-items: center;
+}
+.nav_mobile {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+#cart {
+  color: white;
 }
 /*home page*/
 
 .slide a em {
   text-decoration: line-through red;
+}
+/*cart*/
+.cart_main {
+  min-height: 90vh;
+}
+#cart_body {
+  background-image: none;
+  background-color: #2b3361;
 }
 /*products and Used games page*/
 
@@ -152,12 +168,10 @@ header {
 }
 #email_box {
   display: flex;
-  
 }
 #email_box input {
   max-height: 18px;
   max-width: 18px;
- 
 }
 
 /*about us page*/
@@ -296,9 +310,10 @@ header {
     display: none;
   }
   #ham,
-  #a_user {
+  #a_user,
+  #cart {
     color: white;
-    padding-left: 10px;
+    padding: 5px;
   }
   .nav_mobile {
     align-self: flex-end;
@@ -413,7 +428,7 @@ header {
   header {
     min-height: 150px;
     overflow: hidden;
-    }
+  }
   .i img {
     max-height: 20vh;
     width: 100%;
@@ -439,7 +454,7 @@ header {
     width: fit-content;
     margin: 1% auto;
   }
-  
+
   /*home page*/
 
   .home_main {
