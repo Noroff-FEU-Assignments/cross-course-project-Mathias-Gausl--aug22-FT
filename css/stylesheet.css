@@ -75,11 +75,15 @@ footer {
 header {
   display: flex;
   background-color: #1b203d;
-  position: relative;
+  position: fixed;
   min-height: 80px;
-  margin: 0 0 auto 0;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  top: 0;
+}
+main {
+  margin-top: 200px;
 }
 .nav_mobile {
   width: fit-content;
@@ -88,6 +92,15 @@ header {
 }
 #cart {
   color: white;
+}
+.i img {
+  max-height: 120px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.i {
+  margin: 0 auto;
 }
 /*home page*/
 
@@ -98,9 +111,56 @@ header {
 .cart_main {
   min-height: 90vh;
 }
+.itemAdded {
+  color: lightcoral;
+}
+.remove {
+  color: red;
+  background-color: #000f24;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 25%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+#cart_con {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.cart_items {
+  max-width: 400px;
+  display: flex;
+  color: white;
+  align-items: center;
+  border-bottom: solid 2px white;
+  min-width: 231px;
+  margin-bottom: 30px;
+}
+.cart_items p {
+  padding: 15px 30px;
+  margin: 0;
+}
 #cart_body {
   background-image: none;
   background-color: #2b3361;
+}
+#cart_body h2 {
+  font-size: 1.3em;
+  max-width: 85px;
+  margin: 0 auto;
+}
+#total {
+  color: white;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
 /*products and Used games page*/
 
@@ -246,28 +306,44 @@ header {
   min-height: 40px;
 }
 /* checkout page*/
-
-.cart {
-  color: #ffffff;
-  font-size: 1.5em;
-  background-color: #1b203d;
-  border: #ffffff solid 2px;
-  width: fit-content;
-  padding: 2%;
-  margin: 20px auto;
+.checkout_main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 .checkout_main h1 {
-  margin: 8% auto;
+  margin: 2em auto;
   width: fit-content;
+  padding: 0 auto;
 }
-#checkout {
-  width: 150px;
-  height: 40px;
+.next {
+  max-height: 45px;
+  min-width: 120px;
+  border-radius: 15%;
+  margin: 30px auto;
 }
-.cart p em {
-  text-decoration: line-through red solid;
-  margin: 1ch;
+
+.paySection,
+.infoPart2,
+.information {
+  min-width: 250px;
+  margin: 0 auto;
 }
+.paySection input,
+.infoPart2 input,
+.information input {
+  margin: 0px 10px 30px 10px;
+}
+.paySection h2,
+.infoPart2 h2,
+.information h2 {
+  margin-bottom: 2em;
+}
+.infoPart2,
+.paySection {
+  display: none;
+}
+
 /*checkout finish page*/
 
 .main_success {
@@ -428,17 +504,6 @@ header {
   header {
     min-height: 150px;
     overflow: hidden;
-  }
-  .i img {
-    max-height: 20vh;
-    width: 100%;
-    display: block;
-  }
-  .i {
-    flex-shrink: 0;
-    max-width: 50%;
-    align-self: center;
-    margin-bottom: 10px;
   }
 
   nav a {
@@ -630,59 +695,5 @@ header {
   .main_fur h1 {
     grid-column: 1/3;
     margin: 100px auto 50px auto;
-  }
-  /*checkout page*/
-
-  .checkout_main {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(4, auto);
-    row-gap: 20px;
-    column-gap: 40px;
-    justify-content: center;
-  }
-  .checkout_main h1 {
-    grid-column: 1/5;
-  }
-  .cart {
-    grid-column: 1/5;
-    grid-row: 2/3;
-  }
-  .information {
-    grid-column: 2/3;
-  }
-
-  .payment {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-column: 2/4;
-    row-gap: 20px;
-    column-gap: 20px;
-    width: 400px;
-  }
-  .payment h2 {
-    grid-row: 1/2;
-  }
-  .inf {
-    grid-column: 1/2;
-  }
-  .pay {
-    grid-column: 2/3;
-  }
-  .checkout_cta {
-    grid-column: 1/4;
-  }
-  .cn {
-    grid-row: 2/3;
-  }
-  .exp {
-    grid-row: 3/4;
-  }
-  .cvc {
-    grid-row: 4/5;
-  }
-  .pin {
-    grid-row: 5/6;
   }
 }
