@@ -315,6 +315,7 @@ main {
   width: fit-content;
   padding: 0 auto;
 }
+
 .next {
   max-height: 45px;
   min-width: 120px;
@@ -340,6 +341,10 @@ main {
 .paybutton{
    margin: 0 auto;
    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+ appearance: none;
 }
 
 
@@ -370,7 +375,7 @@ main {
   height: 100vh;
 }
 .main_success h1 {
-  margin: 8% auto 4% auto;
+  margin: 20px auto;
   width: fit-content;
   color: lime;
 }
@@ -380,6 +385,10 @@ main {
   max-width: 250px;
   align-self: center;
   margin: 0 auto;
+  margin-top: 15%;
+  background-color: #2b3361;
+  padding: 15px;
+  border-radius: 15%;
 }
 /*message recived page*/
 
@@ -394,9 +403,10 @@ main {
   h1 {
     width: fit-content;
     margin: 100px auto 30px auto;
+    text-align: center;
   }
   .i img {
-    width: 100%;
+   max-width: 180px;
   }
   .i {
     width: 50%;
