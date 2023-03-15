@@ -61,58 +61,73 @@
     </header>
     <main class="checkout_main">
       <h1>Checkout</h1>
-      <form action="checkout_finish.html" method="link" class="login payment">
+      <form class="login payment">
         <section class="information">
         <h2>Information</h2>
         <div class="inf">
-          <label for="name">Full name</label>
-          <input type="text" name="name" id="name" required />
+          <label for="name" id="nameLabel">Full name</label>
+          <input type="text" name="name" id="name"/>
         </div>
         <div class="inf">
-          <label for="epost">Email</label>
-          <input type="text" name="epost" id="epost" required />
+          <label for="epost" id="emailLabel">Email</label>
+          <input type="text" name="epost" id="epost"/>
         </div>
         <div class="inf">
-          <label for="number">phone number</label>
-          <input type="text" name="number" id="number" required />
+          <label for="number" id="numberLabel">Phone number</label>
+          <input type="number" name="number" id="number"/>
         </div>
-        <button id="next_btn"  class="cta_p buy next">Next</button>
+        <div class="progression">
+          <i class="fa-solid fa-circle">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          </i></div>
+        <button id="next_btn"  class="cta_p next">Next</button>
       </section>
       <section class="infoPart2">
         <h2>Information</h2>
         <div class="inf">
-          <label for="adress">Adress</label>
-          <input type="text" name="adress" id="adress" required />
+          <label for="adress" id="adressLabel">Adress</label>
+          <input type="text" name="adress" id="adress"/>
         </div>
         <div class="inf">
-          <label for="post-code">zip-code</label>
-          <input type="text" name="post-code" id="post-code" required />
+          <label for="post-code" id="zipLabel">zip-code</label>
+          <input type="number" name="post-code" id="post-code"/>
         </div>
-        <button id="next2_btn" class="cta_p buy next">Next</button>
+        <div class="progression">
+          <i class="fa-solid fa-circle">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          </i></div>
+        <button id="next2_btn" class="cta_p next">Next</button>
       </section>
       <section class="paySection">
         <h2>Payment</h2>
         <div class="pay cn">
-          <label for="card-number">Card Number</label>
-          <input type="text" name="card-number" id="card-number" required />
+          <label for="card-number" id="cardLabel">Card Number</label>
+          <input type="number" name="card-number" id="card-number"/>
         </div>
         <div class="pay exp">
-          <label for="expiration">Expiration date</label>
-          <input type="text" name="expiration" id="expiration" required />
+          <label for="expiration" id="expLabel">Expiration date</label>
+          <input type="number" name="expiration" id="expiration"/>
         </div>
         <div class="pay cvc">
-          <label for="cvc">cvc/security code</label>
-          <input type="text" name="cvc" id="cvc" required />
+          <label for="cvc" id="cvcLabel">cvc/security code</label>
+          <input type="number" name="cvc" id="cvc"/>
         </div>
         <div class="checkout_cta">
-          <input type="submit" value="Pay" class="cta_p buy next" id="checkout" />
+          <div class="progression">
+            <i class="fa-solid fa-circle">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            </i></div>
+          <input type="submit" value="Pay" class="cta_p paybutton " id="checkout" />
         </div>
       </form>
     </main>
     <footer>
       copyright &copy;
-      <script src="js/cart.js" type="module"></script>
       <script src="js/cart_amimation.js"></script>
+      <script src="js/checkout.js"></script>
   </footer>
   </body>
 </html>

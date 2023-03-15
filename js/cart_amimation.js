@@ -17,4 +17,4 @@ function newItem() {
   
 }
 newItem();
-buyBtn.addEventListener("click",()=>{location.reload()});
+if(buyBtn != null){buyBtn.addEventListener("click",()=>{location.reload()})};

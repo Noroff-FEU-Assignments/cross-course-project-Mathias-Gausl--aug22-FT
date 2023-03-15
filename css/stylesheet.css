@@ -289,8 +289,7 @@ main {
   margin: 0 auto 50px auto;
   color: #ffffff;
 }
-.buy,
-#checkout {
+.buy{
   background-color: green;
   font: bold;
   border: 5px solid black;
@@ -312,7 +311,7 @@ main {
   flex-direction: column;
 }
 .checkout_main h1 {
-  margin: 2em auto;
+  margin: 1em auto;
   width: fit-content;
   padding: 0 auto;
 }
@@ -320,8 +319,29 @@ main {
   max-height: 45px;
   min-width: 120px;
   border-radius: 15%;
+  margin: 15px auto;
+}
+.progression{
+  padding-top: 10px;
+}
+#checkout{
   margin: 30px auto;
 }
+.checkout_main h3{
+  background-color: lightcoral;
+  color: black;
+  max-width: 300px;
+  padding: 15px;
+  margin: 0 auto;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 1em;
+}
+.paybutton{
+   margin: 0 auto;
+   
+}
+
 
 .paySection,
 .infoPart2,
@@ -337,7 +357,7 @@ main {
 .paySection h2,
 .infoPart2 h2,
 .information h2 {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .infoPart2,
 .paySection {

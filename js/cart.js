@@ -1,4 +1,5 @@
 const cart_content= document.querySelector("#cart_con")
+const checkout_btn= document.querySelector("#checkout_btn")
 const total= document.querySelector("#total")
 let content= []
 let sum= 0;
@@ -27,9 +28,12 @@ function displayContent(){
  
 if(localStorage.length >= 1){
     displayContent()
+    checkout_btn.href= "checkout.html"
 }
 else{
-    cart_content.innerHTML += `<div class="cart_items"><h2>Your cart is Empty</h2><div>`
+    cart_content.innerHTML += `<div class="cart_items"><h2>Looks like your cart is Empty</h2><div>`
+    checkout_btn.href= "products.html"
+    checkout_btn.innerHTML= "Products"
 }
 
 // remove button
