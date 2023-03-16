@@ -77,21 +77,20 @@
       </section>
       <section class="p_contact">
         <div>
-          <p>Or send us a direct message and we will answer on your Email:</p>
+          <h3>Or send us a direct message and we will answer on your Email:</h3>
         </div>
         <form action="message.html" method="link" class="login contact_form">
           <div class="form_email">
-            <label for="email_contact">Email</label>
+            <label for="email_contact" id="emailLabel">Email</label>
             <input
               type="text"
               name="email_contact"
               id="email_contact"
-              required
             />
           </div>
           <div class="form_name">
-            <label for="name_contact">Full Name</label>
-            <input type="text" name="name_contact" id="name_contact" required />
+            <label for="name_contact" id="nameLabel">Full Name</label>
+            <input type="text" name="name_contact" id="name_contact" />
           </div>
           <div class="options">
             <label for="options">What is this about?</label>
@@ -103,13 +102,12 @@
             </select>
           </div>
           <div class="textbox">
-            <label for="write">Your message here:</label>
+            <label for="write" id="writeLabel">Your message here:</label>
             <textarea
               name="write"
               id="write"
               cols="30"
               rows="10"
-              required
             ></textarea>
           </div>
           <div class="send_contact">
@@ -124,8 +122,14 @@
       </section>
     </main>
     <footer>
-      copyright &copy;
+      <ul>
+        <li>Email: Gamehubsupport@gmail.com</li>
+        <li>Phone: 99998888</li>
+        <li>Address: example street 2, 4815 Arendal</li>
+        copyright &copy;
+      </ul>
       <script src="js/cart_amimation.js"></script>
+      <script src="js/contact.js"></script>
     </footer>
   </body>
 </html>

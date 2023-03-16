@@ -45,6 +45,7 @@ body {
   background-position: center top;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.2);
+
 }
 footer {
   display: flex;
@@ -52,9 +53,16 @@ footer {
   background-color: #1b203d;
   color: white;
   padding: 0px;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 50px;
+  max-width: 100%;
+  flex-direction: column;
+}
+footer ul{
+  list-style: none;
+  width: fit-content;
+  padding-left: 20px;
+
 }
 .cta_p {
   display: flex;
@@ -84,11 +92,13 @@ header {
 }
 main {
   margin-top: 200px;
+  min-height: 90vh;
 }
 .nav_mobile {
-  width: fit-content;
+  max-width: 90vw;
   display: flex;
   align-items: center;
+
 }
 #cart {
   color: white;
@@ -264,11 +274,17 @@ main {
 }
 .p_contact {
   max-width: 500px;
-  margin: 20px 8% 10% 8%;
+  margin: 20px 8% 20px 8%;
   justify-self: center;
 }
 .p_contact ul {
   padding: 1ch;
+}
+.p_contact h3 {
+  text-align: center;
+}
+#thx_h1{
+  text-align: center;
 }
 
 /*game info*/
@@ -397,7 +413,7 @@ input::-webkit-inner-spin-button{
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   /*general*/
 
   h1 {
@@ -477,7 +493,7 @@ input::-webkit-inner-spin-button{
     margin-bottom: 30%;
     margin-top: 30%;
   }
-  .slide div {
+  .slide div{
     padding-right: 15%;
     background-color: #cccccc;
     background-clip: content-box;
@@ -502,7 +518,7 @@ input::-webkit-inner-spin-button{
   .games_card {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 250px;
     background-color: #cccccc;
     margin: 50px auto;
   }
@@ -523,8 +539,11 @@ input::-webkit-inner-spin-button{
     max-height: 10vh;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
   /*general*/
+  footer ul{
+    margin: 16px 0 16px 0;
+  }
 
   #ham,
   #checkmenu,
@@ -679,7 +698,7 @@ input::-webkit-inner-spin-button{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 20px;
   }
   .send_contact {
     grid-column: 1/-1;
