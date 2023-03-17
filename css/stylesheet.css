@@ -45,6 +45,7 @@ body {
   background-position: center top;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.2);
+
 }
 footer {
   display: flex;
@@ -52,9 +53,16 @@ footer {
   background-color: #1b203d;
   color: white;
   padding: 0px;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 50px;
+  max-width: 100%;
+  flex-direction: column;
+}
+footer ul{
+  list-style: none;
+  width: fit-content;
+  padding-left: 20px;
+
 }
 .cta_p {
   display: flex;
@@ -63,8 +71,8 @@ footer {
   color: #ffffff;
   border-radius: 35%;
   width: 120px;
-  height: 60px;
-  margin: 4vh auto;
+  min-height: 60px;
+  margin: 20px auto;
   font-size: 1.2em;
   justify-content: center;
   align-items: center;
@@ -75,38 +83,98 @@ footer {
 header {
   display: flex;
   background-color: #1b203d;
-  position: relative;
+  position: fixed;
   min-height: 80px;
-  margin: 0 0 auto 0;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  top: 0;
+}
+main {
+  margin-top: 200px;
+  min-height: 90vh;
 }
 .nav_mobile {
-  width: fit-content;
+  max-width: 90vw;
   display: flex;
   align-items: center;
+
 }
 #cart {
   color: white;
 }
+.i img {
+  max-height: 120px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.i {
+  margin: 0 auto;
+}
 /*home page*/
-
-.slide a em {
+#h3gameCard{
+  margin-top: 0px;
+}
+.oldPrice{
   text-decoration: line-through red;
 }
 /*cart*/
 .cart_main {
   min-height: 90vh;
 }
+.itemAdded {
+  color: lightcoral;
+}
+.remove {
+  color: red;
+  background-color: #000f24;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 25%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+#cart_con {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.cart_items {
+  max-width: 400px;
+  display: flex;
+  color: white;
+  align-items: center;
+  border-bottom: solid 2px white;
+  min-width: 231px;
+  margin-bottom: 30px;
+}
+.cart_items p {
+  padding: 15px 30px;
+  margin: 0;
+}
 #cart_body {
   background-image: none;
   background-color: #2b3361;
 }
-/*products and Used games page*/
-
-.games_card em {
-  text-decoration: line-through red;
+#cart_body h2 {
+  font-size: 1.3em;
+  max-width: 85px;
+  margin: 0 auto;
 }
+#total {
+  color: white;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
 /*login page and signup page*/
 
 .login_main {
@@ -116,15 +184,20 @@ header {
 .login {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   text-align: center;
   color: white;
   overflow: scroll;
   align-items: center;
+  
+
 }
-.login div {
-  margin: 3%;
+.login div{
+ margin-bottom: 30px;
 }
+.login h1{
+  margin: 50px auto 30px auto;
+}
+
 .login div label {
   display: block;
   margin-bottom: 2%;
@@ -150,6 +223,13 @@ header {
 .sub em {
   color: red;
 }
+#eye, #eyeRepeat{
+  display: none;
+  margin: 0 0 0 10px;
+}
+#eyeClosed, #eyeClosedRepeat{
+  margin: 0 0 0 10px;
+}
 
 .login input {
   background-color: #1b203d;
@@ -158,6 +238,10 @@ header {
   border-radius: 20%;
   height: 25px;
   text-align: center;
+  min-width: 180px;
+}
+.passinput{
+  min-width: 150px !important;
 }
 .log_button {
   width: 100px;
@@ -172,8 +256,11 @@ header {
 #email_box input {
   max-height: 18px;
   max-width: 18px;
+  min-width: 20px;
 }
-
+#submitSignup{
+  height: 30px;
+}
 /*about us page*/
 
 .about {
@@ -204,11 +291,17 @@ header {
 }
 .p_contact {
   max-width: 500px;
-  margin: 20px 8% 10% 8%;
+  margin: 20px 8% 20px 8%;
   justify-self: center;
 }
 .p_contact ul {
   padding: 1ch;
+}
+.p_contact h3 {
+  text-align: center;
+}
+#thx_h1{
+  text-align: center;
 }
 
 /*game info*/
@@ -229,15 +322,12 @@ header {
   margin: 0 auto 50px auto;
   color: #ffffff;
 }
-.buy,
-#checkout {
+.buy{
   background-color: green;
   font: bold;
   border: 5px solid black;
 }
-.buy em {
-  text-decoration: red solid line-through;
-}
+
 #checkout:hover {
   background-color: lime;
 }
@@ -246,35 +336,81 @@ header {
   min-height: 40px;
 }
 /* checkout page*/
-
-.cart {
-  color: #ffffff;
-  font-size: 1.5em;
-  background-color: #1b203d;
-  border: #ffffff solid 2px;
-  width: fit-content;
-  padding: 2%;
-  margin: 20px auto;
+.checkout_main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 .checkout_main h1 {
-  margin: 8% auto;
+  margin: 1em auto;
   width: fit-content;
+  padding: 0 auto;
 }
-#checkout {
-  width: 150px;
-  height: 40px;
+
+.next {
+  max-height: 45px;
+  min-width: 120px;
+  border-radius: 15%;
+  margin: 15px auto;
 }
-.cart p em {
-  text-decoration: line-through red solid;
-  margin: 1ch;
+.progression{
+  padding-top: 10px;
 }
+#checkout{
+  margin: 30px auto;
+}
+.checkout_main h3{
+  background-color: lightcoral;
+  color: black;
+  max-width: 300px;
+  padding: 15px;
+  margin: 0 auto;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 1em;
+}
+.paybutton{
+   margin: 0 auto;
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+ appearance: none;
+}
+input{
+  -moz-appearance: textfield;
+}
+
+
+
+.paySection,
+.infoPart2,
+.information {
+  min-width: 250px;
+  margin: 0 auto;
+}
+.paySection input,
+.infoPart2 input,
+.information input {
+  margin: 0px 10px 30px 10px;
+}
+.paySection h2,
+.infoPart2 h2,
+.information h2 {
+  margin-bottom: 1em;
+}
+.infoPart2,
+.paySection {
+  display: none;
+}
+
 /*checkout finish page*/
 
 .main_success {
   height: 100vh;
 }
 .main_success h1 {
-  margin: 8% auto 4% auto;
+  margin: 20px auto;
   width: fit-content;
   color: lime;
 }
@@ -284,6 +420,10 @@ header {
   max-width: 250px;
   align-self: center;
   margin: 0 auto;
+  margin-top: 15%;
+  background-color: #2b3361;
+  padding: 15px;
+  border-radius: 15%;
 }
 /*message recived page*/
 
@@ -292,15 +432,16 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   /*general*/
 
   h1 {
     width: fit-content;
     margin: 100px auto 30px auto;
+    text-align: center;
   }
   .i img {
-    width: 100%;
+   max-width: 180px;
   }
   .i {
     width: 50%;
@@ -371,7 +512,7 @@ header {
     margin-bottom: 30%;
     margin-top: 30%;
   }
-  .slide div {
+  .slide div{
     padding-right: 15%;
     background-color: #cccccc;
     background-clip: content-box;
@@ -396,7 +537,7 @@ header {
   .games_card {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 250px;
     background-color: #cccccc;
     margin: 50px auto;
   }
@@ -417,8 +558,11 @@ header {
     max-height: 10vh;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
   /*general*/
+  footer ul{
+    margin: 16px 0 16px 0;
+  }
 
   #ham,
   #checkmenu,
@@ -428,17 +572,6 @@ header {
   header {
     min-height: 150px;
     overflow: hidden;
-  }
-  .i img {
-    max-height: 20vh;
-    width: 100%;
-    display: block;
-  }
-  .i {
-    flex-shrink: 0;
-    max-width: 50%;
-    align-self: center;
-    margin-bottom: 10px;
   }
 
   nav a {
@@ -525,6 +658,12 @@ header {
     width: 20vw;
     text-align: center;
     margin: 50px auto;
+    min-height: 420px ;
+    justify-content: space-between;
+
+  }
+  .games_card h2{
+    margin: 10px;
   }
 
   .ping_pong,
@@ -584,7 +723,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 20px;
   }
   .send_contact {
     grid-column: 1/-1;
@@ -630,59 +769,5 @@ header {
   .main_fur h1 {
     grid-column: 1/3;
     margin: 100px auto 50px auto;
-  }
-  /*checkout page*/
-
-  .checkout_main {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(4, auto);
-    row-gap: 20px;
-    column-gap: 40px;
-    justify-content: center;
-  }
-  .checkout_main h1 {
-    grid-column: 1/5;
-  }
-  .cart {
-    grid-column: 1/5;
-    grid-row: 2/3;
-  }
-  .information {
-    grid-column: 2/3;
-  }
-
-  .payment {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-column: 2/4;
-    row-gap: 20px;
-    column-gap: 20px;
-    width: 400px;
-  }
-  .payment h2 {
-    grid-row: 1/2;
-  }
-  .inf {
-    grid-column: 1/2;
-  }
-  .pay {
-    grid-column: 2/3;
-  }
-  .checkout_cta {
-    grid-column: 1/4;
-  }
-  .cn {
-    grid-row: 2/3;
-  }
-  .exp {
-    grid-row: 3/4;
-  }
-  .cvc {
-    grid-row: 4/5;
-  }
-  .pin {
-    grid-row: 5/6;
   }
 }

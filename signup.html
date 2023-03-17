@@ -34,7 +34,6 @@
     />
     <title>sign up</title>
   </head>
-
   <body>
     <header>
       <div class="i">
@@ -59,30 +58,33 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <a href="cart.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping"></i>
+        </a>
       </section>
     </header>
     <main>
       <form action="index.html" method="link" class="login signup">
         <h1>Sign up</h1>
         <div>
-          <label for="full_name">Full Name</label>
-          <input type="text" name="full_name" id="full_name" required />
+          <label for="full_name" id="fName">Full Name</label>
+          <input type="text" name="full_name" id="full_name"/>
         </div>
         <div>
-          <label for="em">Email</label>
-          <input type="text" name="em" id="em" required />
+          <label for="em" id="emailLabel">Email</label>
+          <input type="text" name="em" id="em"/>
         </div>
         <div>
-          <label for="adress">Adress</label>
-          <input type="text" name="adress" id="adress" required />
+          <label for="pass" id="passLabel">Password</label>
+          <input type="password" name="pass" id="pass" class="passinput"/>
+          <i class="fa-solid fa-eye-slash" id="eyeClosed"></i>
+          <i class="fa-solid fa-eye"  id="eye"></i>
         </div>
         <div>
-          <label for="password">Password</label>
-          <input type="text" name="password" id="password" required />
-        </div>
-        <div>
-          <label for="re_pass">Repeat Password</label>
-          <input type="text" name="re_pass" id="re_pass" required />
+          <label for="re_pass" id="rePassLabel">Repeat Password</label>
+          <input type="password" name="re_pass" id="rePass" class="passinput"/>
+          <i class="fa-solid fa-eye-slash" id="eyeClosedRepeat"></i>
+          <i class="fa-solid fa-eye"  id="eyeRepeat"></i>
         </div>
         <div id="email_box">
           <input
@@ -96,10 +98,19 @@
           >
         </div>
         <div class="sub">
-          <input type="submit" value="Sign up" class="log_button" />
+          <input type="submit" value="Sign up" class="log_button" id="submitSignup" />
         </div>
       </form>
     </main>
-    <footer>copyright &copy;</footer>
+    <footer>
+      <ul>
+        <li>Email: Gamehubsupport@gmail.com</li>
+        <li>Phone: 99998888</li>
+        <li>Address: example street 2, 4815 Arendal</li>
+        copyright &copy;
+      </ul>
+      <script src="js/cart_amimation.js"></script>
+      <script src="js/signupAndlogin.js" type="module"></script>
+    </footer>
   </body>
 </html>

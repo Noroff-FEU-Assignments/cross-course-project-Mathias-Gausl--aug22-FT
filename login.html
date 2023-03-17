@@ -58,25 +58,39 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <a href="cart.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping"></i>
+        </a>
       </section>
     </header>
     <main class="login_main">
       <form action="index.html" method="https" class="login">
         <h1>Login</h1>
         <div>
-          <label for="em">Email</label>
-          <input type="text" id="em" name="em" required />
+          <label for="em" id="emailLabel">Email</label>
+          <input type="text" id="em" name="em"/>
         </div>
         <div>
-          <label for="pass">Password</label>
-          <input type="text" name="pass" id="pass" required />
+          <label for="pass" id="passLabel">Password</label>
+          <input type="password" name="pass" id="pass" class="passinput"/>
+          <i class="fa-solid fa-eye-slash" id="eyeClosed"></i>
+          <i class="fa-solid fa-eye"  id="eye"></i>
         </div>
         <div class="sub">
-          <input type="submit" value="Login" class="log_button" />
+          <input type="submit" value="Login" class="log_button" id="submit" />
           <a href="signup.html">Or Sign Up <em>HERE</em></a>
         </div>
       </form>
     </main>
-    <footer>copyright &copy;</footer>
+    <footer>
+      <ul>
+        <li>Email: Gamehubsupport@gmail.com</li>
+        <li>Phone: 99998888</li>
+        <li>Address: example street 2, 4815 Arendal</li>
+        copyright &copy;
+      </ul>
+      <script src="js/cart_amimation.js"></script>
+      <script src="js/signupAndlogin.js" type="module"></script>
+    </footer>
   </body>
 </html>
