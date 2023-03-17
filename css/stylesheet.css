@@ -71,8 +71,8 @@ footer ul{
   color: #ffffff;
   border-radius: 35%;
   width: 120px;
-  height: 60px;
-  margin: 4vh auto;
+  min-height: 60px;
+  margin: 20px auto;
   font-size: 1.2em;
   justify-content: center;
   align-items: center;
@@ -113,8 +113,10 @@ main {
   margin: 0 auto;
 }
 /*home page*/
-
-.slide a em {
+#h3gameCard{
+  margin-top: 0px;
+}
+.oldPrice{
   text-decoration: line-through red;
 }
 /*cart*/
@@ -172,11 +174,7 @@ main {
   margin-bottom: 15px;
   font-size: 30px;
 }
-/*products and Used games page*/
 
-.games_card em {
-  text-decoration: line-through red;
-}
 /*login page and signup page*/
 
 .login_main {
@@ -186,15 +184,20 @@ main {
 .login {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   text-align: center;
   color: white;
   overflow: scroll;
   align-items: center;
+  
+
 }
-.login div {
-  margin: 3%;
+.login div{
+ margin-bottom: 30px;
 }
+.login h1{
+  margin: 50px auto 30px auto;
+}
+
 .login div label {
   display: block;
   margin-bottom: 2%;
@@ -220,6 +223,13 @@ main {
 .sub em {
   color: red;
 }
+#eye, #eyeRepeat{
+  display: none;
+  margin: 0 0 0 10px;
+}
+#eyeClosed, #eyeClosedRepeat{
+  margin: 0 0 0 10px;
+}
 
 .login input {
   background-color: #1b203d;
@@ -228,6 +238,10 @@ main {
   border-radius: 20%;
   height: 25px;
   text-align: center;
+  min-width: 180px;
+}
+.passinput{
+  min-width: 150px !important;
 }
 .log_button {
   width: 100px;
@@ -242,8 +256,11 @@ main {
 #email_box input {
   max-height: 18px;
   max-width: 18px;
+  min-width: 20px;
 }
-
+#submitSignup{
+  height: 30px;
+}
 /*about us page*/
 
 .about {
@@ -310,9 +327,7 @@ main {
   font: bold;
   border: 5px solid black;
 }
-.buy em {
-  text-decoration: red solid line-through;
-}
+
 #checkout:hover {
   background-color: lime;
 }
@@ -362,6 +377,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
  appearance: none;
 }
+input{
+  -moz-appearance: textfield;
+}
+
 
 
 .paySection,
@@ -639,6 +658,12 @@ input::-webkit-inner-spin-button{
     width: 20vw;
     text-align: center;
     margin: 50px auto;
+    min-height: 420px ;
+    justify-content: space-between;
+
+  }
+  .games_card h2{
+    margin: 10px;
   }
 
   .ping_pong,

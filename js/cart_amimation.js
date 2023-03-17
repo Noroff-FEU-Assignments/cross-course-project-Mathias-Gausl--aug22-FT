@@ -1,6 +1,10 @@
-let cart = document.querySelector("#cart");
-let buyBtn = document.querySelector(".buy")
+const cart = document.querySelector("#cart");
+const buyBtn = document.querySelector(".buy")
 let num = localStorage.length;
+
+
+
+
 function newItem() {
   if (localStorage.length ++) {
     cart.innerHTML += `<em  class="itemAdded">${num}</em>`;
@@ -18,3 +22,5 @@ function newItem() {
 }
 newItem();
 if(buyBtn != null){buyBtn.addEventListener("click",()=>{location.reload()})};
+
+

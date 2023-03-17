@@ -8,7 +8,10 @@ const nameLabel = document.getElementById("fName");
 const repass = document.getElementById("rePass");
 const repassLabel = document.getElementById("rePassLabel");
 const submitSignup = document.getElementById("submitSignup");
-
+const eyeclosed= document.getElementById("eyeClosed");
+const eyeopen= document.getElementById("eye");
+const eyeclosedRepeat= document.getElementById("eyeClosedRepeat");
+const eyeopenRepeat= document.getElementById("eyeRepeat");
 
 /*validation functions */
 
@@ -34,6 +37,13 @@ function inputLength(input, num) {
     return true;
   } else {
     return false;
+  }
+}
+function passwordmatch() {
+  if (repass.value != pass.value) {
+    return false;
+  } else {
+    return true;
   }
 }
 /*onclick */
@@ -65,15 +75,17 @@ if (submit != null) {
     }
   });
 }
-if(submitSignup != null){
+if (submitSignup != null) {
   submitSignup.addEventListener("click", () => {
-    invalidInput(
-      repass,
-      repassLabel,
-      "Password needs to be a minimum of 8 characters",
-      "Repeat Password",
-      8
-    );
+    if (repass.value != pass.value) {
+      repassLabel.innerHTML = "This must be similar to the password above";
+      repassLabel.style.color = "red";
+      repass.style.border = "2px red solid";
+    } else {
+      repassLabel.innerHTML = "Repeat Password";
+      repassLabel.style.color = "white";
+      repass.style.border = "1px white solid";
+    }
   });
   submitSignup.addEventListener("click", () => {
     invalidInput(
@@ -94,7 +106,7 @@ if(submitSignup != null){
       email.style.border = "2px red solid";
       emailLabel.innerHTML = "Invalid Email";
     }
-  }); 
+  });
   submitSignup.addEventListener("click", () => {
     invalidInput(
       pass,
@@ -106,8 +118,34 @@ if(submitSignup != null){
   });
   submitSignup.addEventListener("click", (click) => {
     click.preventDefault();
-    if (inputLength(repass, 8) === true && inputLength(fullName, 6) && inputLength(pass,8) === true && emailVal() === true) {
+    if (
+      inputLength(fullName, 6) &&
+      inputLength(pass, 8) === true &&
+      emailVal() === true &&
+      passwordmatch() === true
+    ) {
       window.location = "index.html";
     }
   });
 }
+eyeclosed.addEventListener("click", ()=> {
+  pass.type= "text";
+  eyeclosed.style.display= "none";
+  eyeopen.style.display= "inline";
+})
+eyeopen.addEventListener("click", ()=> {
+  pass.type= "password";
+  eyeclosed.style.display= "inline";
+  eyeopen.style.display= "none";
+})
+if(repass != null){
+  eyeclosedRepeat.addEventListener("click", ()=> {
+    repass.type= "text";
+    eyeclosedRepeat.style.display= "none";
+    eyeopenRepeat.style.display= "inline";
+  })
+  eyeopenRepeat.addEventListener("click", ()=> {
+    repass.type= "password";
+    eyeclosedRepeat.style.display= "inline";
+    eyeopenRepeat.style.display= "none";
+  })}
