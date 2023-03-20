@@ -77,7 +77,7 @@ function emailVal() {
 
 next_btn.addEventListener("click", (click)=>{
     click.preventDefault()
-    if(inputLength(fullName, 8)=== true && inputLength(number, 8)=== true && emailVal()=== true){
+    if(inputLength(fullName, 6)=== true && inputLength(number, 8)=== true && emailVal()=== true){
         infPart1.style.display ="none";
         infPart2.style.display ="block";
         next_btn.disabled= true;
@@ -90,7 +90,7 @@ next_btn.addEventListener("click", (click)=>{
 })
 next_btn2.addEventListener("click", (click)=>{
     click.preventDefault()
-    if(inputLength(adress, 6)=== true && inputLength(zip, 4)=== true){
+    if(inputLength(adress, 5)=== true && inputLength(zip, 4)=== true){
         infPart2.style.display ="none";
         pay.style.display ="block";
         h2.innerHTML = "Checkout"
