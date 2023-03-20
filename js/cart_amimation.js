@@ -1,5 +1,8 @@
 const cart = document.querySelector("#cart");
 const buyBtn = document.querySelector(".buy")
+const ham = document.querySelector("#checkbox");
+const nav = document.querySelector("nav");
+nav.classList.add("ham")
 let num = localStorage.length;
 
 
@@ -22,5 +25,5 @@ function newItem() {
 }
 newItem();
 if(buyBtn != null){buyBtn.addEventListener("click",()=>{location.reload()})};
-
+ham.addEventListener("click", ()=>{nav.classList.toggle("ham");})
 

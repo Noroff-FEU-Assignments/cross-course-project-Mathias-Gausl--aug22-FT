@@ -45,7 +45,6 @@ body {
   background-position: center top;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 footer {
   display: flex;
@@ -58,11 +57,10 @@ footer {
   max-width: 100%;
   flex-direction: column;
 }
-footer ul{
+footer ul {
   list-style: none;
   width: fit-content;
   padding-left: 20px;
-
 }
 .cta_p {
   display: flex;
@@ -98,7 +96,6 @@ main {
   max-width: 90vw;
   display: flex;
   align-items: center;
-
 }
 #cart {
   color: white;
@@ -113,10 +110,10 @@ main {
   margin: 0 auto;
 }
 /*home page*/
-.h3gameCard{
+.h3gameCard {
   margin-top: 0px;
 }
-.oldPrice{
+.oldPrice {
   text-decoration: line-through red;
 }
 /*cart*/
@@ -188,13 +185,11 @@ main {
   color: white;
   overflow: scroll;
   align-items: center;
-  
-
 }
-.login div{
- margin-bottom: 30px;
+.login div {
+  margin-bottom: 30px;
 }
-.login h1{
+.login h1 {
   margin: 50px auto 30px auto;
 }
 
@@ -223,11 +218,13 @@ main {
 .sub em {
   color: red;
 }
-#eye, #eyeRepeat{
+#eye,
+#eyeRepeat {
   display: none;
   margin: 0 0 0 10px;
 }
-#eyeClosed, #eyeClosedRepeat{
+#eyeClosed,
+#eyeClosedRepeat {
   margin: 0 0 0 10px;
 }
 
@@ -240,7 +237,7 @@ main {
   text-align: center;
   min-width: 180px;
 }
-.passinput{
+.passinput {
   min-width: 150px !important;
 }
 .log_button {
@@ -258,7 +255,7 @@ main {
   max-width: 18px;
   min-width: 20px;
 }
-#submitSignup{
+#submitSignup {
   height: 30px;
 }
 /*about us page*/
@@ -300,7 +297,7 @@ main {
 .p_contact h3 {
   text-align: center;
 }
-#thx_h1{
+#thx_h1 {
   text-align: center;
 }
 
@@ -322,7 +319,7 @@ main {
   margin: 0 auto 50px auto;
   color: #ffffff;
 }
-.buy{
+.buy {
   background-color: green;
   font: bold;
   border: 5px solid black;
@@ -353,13 +350,13 @@ main {
   border-radius: 15%;
   margin: 15px auto;
 }
-.progression{
+.progression {
   padding-top: 10px;
 }
-#checkout{
+#checkout {
   margin: 30px auto;
 }
-.checkout_main h3{
+.checkout_main h3 {
   background-color: lightcoral;
   color: black;
   max-width: 300px;
@@ -369,19 +366,16 @@ main {
   text-align: center;
   font-size: 1em;
 }
-.paybutton{
-   margin: 0 auto;
-   
+.paybutton {
+  margin: 0 auto;
 }
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
- appearance: none;
+input::-webkit-inner-spin-button {
+  appearance: none;
 }
-input{
+input {
   -moz-appearance: textfield;
 }
-
-
 
 .paySection,
 .infoPart2,
@@ -441,18 +435,15 @@ input{
     text-align: center;
   }
   .i img {
-   max-width: 180px;
+    max-width: 180px;
   }
   .i {
     width: 50%;
     margin: 0 auto;
   }
-  #checkmenu {
-    display: none;
-  }
-  #ham,
   #a_user,
-  #cart {
+  #cart,
+  #checkbox {
     color: white;
     padding: 5px;
   }
@@ -460,11 +451,13 @@ input{
     align-self: flex-end;
     margin: 0 10px;
   }
+  .ham {
+    display: none;
+  }
   nav {
     color: white;
     position: absolute;
     background-color: #1b203d;
-    display: none;
     min-width: 100px;
     min-height: 200px;
     top: 100%;
@@ -480,10 +473,6 @@ input{
     color: white;
     text-decoration: none;
     margin-right: 10vh;
-  }
-
-  #checkmenu:checked ~ nav {
-    display: inline-block;
   }
   .cta_p {
     width: 100px;
@@ -512,7 +501,7 @@ input{
     margin-bottom: 30%;
     margin-top: 30%;
   }
-  .slide div{
+  .slide div {
     padding-right: 15%;
     background-color: #cccccc;
     background-clip: content-box;
@@ -560,12 +549,11 @@ input{
 }
 @media screen and (min-width: 701px) {
   /*general*/
-  footer ul{
+  footer ul {
     margin: 16px 0 16px 0;
   }
 
-  #ham,
-  #checkmenu,
+  #checkbox,
   #a_user {
     display: none;
   }
@@ -658,11 +646,10 @@ input{
     width: 20vw;
     text-align: center;
     margin: 50px auto;
-    min-height: 420px ;
+    min-height: 420px;
     justify-content: space-between;
-
   }
-  .games_card h2{
+  .games_card h2 {
     margin: 10px;
   }
 
