@@ -20,9 +20,9 @@ let filteredContent= content.filter( items=> {return items !== null})
 function displayContent(){
        for(let i=0; i < filteredContent.length; i++ ){
         let parsedContent=JSON.parse(filteredContent[i])
-        cart_content.innerHTML += `<div class="cart_items"><h2>${parsedContent.name}</h2><p>Price: ${parsedContent.price}$</p><buttton class="remove" id= "${parsedContent.id}">-</button></div>`
+        cart_content.innerHTML += `<div class="cart_items"><h2>${parsedContent.name}</h2><p>Price: ${parsedContent.price}£</p><buttton class="remove" id= "${parsedContent.id}">-</button></div>`
         sum += parsedContent.price;
-        total.innerHTML="Total:"+" "+ sum + "$";
+        total.innerHTML="Total:"+" "+ sum + "£";
 
     }}
  
