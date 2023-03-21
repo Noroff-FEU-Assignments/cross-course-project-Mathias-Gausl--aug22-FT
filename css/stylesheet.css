@@ -46,6 +46,7 @@ body {
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 footer {
   display: flex;
   min-height: 75px;
@@ -97,8 +98,12 @@ main {
   display: flex;
   align-items: center;
 }
-#cart {
+#cart, #cartMobile {
   color: white;
+}
+
+#cart:hover,#cart:focus, #cartDesktop:hover, #cartDesktop:focus {
+  background-color:#1b203d;
 }
 .i img {
   max-height: 120px;
@@ -426,8 +431,15 @@ input {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 715px) {
   /*general*/
+  #cart{
+    display: none !important; 
+  }
+  #cartMobile{
+    display: inline-block !important;
+  }
+
 
   h1 {
     width: fit-content;
@@ -442,10 +454,12 @@ input {
     margin: 0 auto;
   }
   #a_user,
-  #cart,
+  #cartMobile,
   #checkbox {
     color: white;
-    padding: 5px;
+    padding: 8px;
+    font-size: 1.2em;
+    
   }
   .nav_mobile {
     align-self: flex-end;
@@ -547,8 +561,11 @@ input {
     max-height: 10vh;
   }
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 716px) {
   /*general*/
+  #cartMobile{
+    display: none !important;
+  }
   footer ul {
     margin: 16px 0 16px 0;
   }
@@ -570,6 +587,9 @@ input {
   }
   nav li {
     display: inline;
+  }
+  .cart_li a{
+    padding: 10px;
   }
   ul {
     width: fit-content;
