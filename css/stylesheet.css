@@ -145,13 +145,12 @@ main {
 #cart_con {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  width: fit-content;
+  align-items: center;
   margin: 0 auto;
   padding: 0 30px;
 }
 .cart_items {
-  max-width: 400px;
+  min-width: 300px !important;
   display: flex;
   color: white;
   align-items: center;
@@ -159,7 +158,7 @@ main {
   min-width: 231px;
   margin-bottom: 30px;
 }
-.cart_items p {
+.cart_items p{
   padding: 15px 30px;
   margin: 0;
 }
@@ -169,8 +168,12 @@ main {
 }
 #cart_body h2 {
   font-size: 1.3em;
-  max-width: 85px;
-  margin: 0 auto;
+  max-width: 160px;
+  margin: 0 auto 0 0;
+}
+.consoleType{
+  font-size: 0.8em;
+  display: block;
 }
 #total {
   color: white;
@@ -442,6 +445,12 @@ input {
   }
   #cartMobile {
     display: inline-block !important;
+  }
+  .cart_items {
+   min-width: 200px !important;
+  }
+  #cart_con{
+    width: min-content;
   }
 
   h1 {

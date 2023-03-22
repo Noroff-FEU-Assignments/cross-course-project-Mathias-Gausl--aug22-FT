@@ -20,7 +20,7 @@ let filteredContent= content.filter( items=> {return items !== null})
 function displayContent(){
        for(let i=0; i < filteredContent.length; i++ ){
         let parsedContent=JSON.parse(filteredContent[i])
-        cart_content.innerHTML += `<div class="cart_items"><h2>${parsedContent.name}</h2><p>Price: ${parsedContent.price}£</p><buttton class="remove" id= "${parsedContent.id}">-</button></div>`
+        cart_content.innerHTML += `<div class="cart_items"><h2>${parsedContent.name} <em class= "consoleType">Console: ${parsedContent.console}</em></h2><p>Price: ${parsedContent.price}£</p><buttton class="remove" id= "${parsedContent.id}">-</button></div>`
         sum += parsedContent.price;
         total.innerHTML="Total:"+" "+ sum + "£";
 
@@ -32,6 +32,7 @@ if(localStorage.length >= 1){
 }
 else{
     cart_content.innerHTML += `<div class="cart_items"><h2>Looks like your cart is Empty</h2><div>`
+    cart_content.style.textAlign= "center"
     checkout_btn.href= "products.html"
     checkout_btn.innerHTML= "Products"
 }
