@@ -98,12 +98,16 @@ main {
   display: flex;
   align-items: center;
 }
-#cart, #cartMobile {
+#cart,
+#cartMobile {
   color: white;
 }
 
-#cart:hover,#cart:focus, #cartDesktop:hover, #cartDesktop:focus {
-  background-color:#1b203d;
+#cart:hover,
+#cart:focus,
+#cartDesktop:hover,
+#cartDesktop:focus {
+  background-color: #1b203d;
 }
 .i img {
   max-height: 120px;
@@ -433,13 +437,12 @@ input {
 
 @media screen and (max-width: 715px) {
   /*general*/
-  #cart{
-    display: none !important; 
+  #cart {
+    display: none !important;
   }
-  #cartMobile{
+  #cartMobile {
     display: inline-block !important;
   }
-
 
   h1 {
     width: fit-content;
@@ -457,9 +460,8 @@ input {
   #cartMobile,
   #checkbox {
     color: white;
-    padding: 8px;
+    padding: 4px;
     font-size: 1.2em;
-    
   }
   .nav_mobile {
     align-self: flex-end;
@@ -491,7 +493,7 @@ input {
   .cta_p {
     width: 100px;
     height: 60px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
   }
   /*home page*/
 
@@ -517,11 +519,12 @@ input {
   }
   .slide div {
     padding-right: 15%;
-    background-color: #cccccc;
+    background-color: #2b3361;
     background-clip: content-box;
     display: flex;
     flex-direction: column;
     width: 100%;
+    color: white;
   }
 
   #slide2 {
@@ -536,13 +539,18 @@ input {
   }
   .games_card img {
     max-width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
   }
   .games_card {
     display: flex;
     flex-direction: column;
     width: 250px;
-    background-color: #cccccc;
+    background-color: #2b3361;
+    color: white;
     margin: 50px auto;
+    border-radius: 10%;
+    align-items: center;
   }
 
   .games_card a {
@@ -563,7 +571,7 @@ input {
 }
 @media screen and (min-width: 716px) {
   /*general*/
-  #cartMobile{
+  #cartMobile {
     display: none !important;
   }
   footer ul {
@@ -588,7 +596,7 @@ input {
   nav li {
     display: inline;
   }
-  .cart_li a{
+  .cart_li a {
     padding: 10px;
   }
   ul {
