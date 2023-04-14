@@ -45,7 +45,6 @@ body {
   background-position: center top;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 footer {
   display: flex;
@@ -87,7 +86,7 @@ header {
   min-height: 80px;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   top: 0;
 }
 main {
@@ -138,9 +137,6 @@ main {
   margin-bottom: 0.3em;
   margin-top: 0.2em;
   color: white;
-}
-.slide h2{
-  font-size: 2em;
 }
 .slide{
   text-decoration: none;
@@ -418,9 +414,6 @@ input::-webkit-inner-spin-button{
 input{
   -moz-appearance: textfield;
 }
-
-
-
 .paySection,
 .infoPart2,
 .information {
@@ -531,11 +524,11 @@ input{
   /*home page*/
 
   .sales img,
-  .news img {
+  .news img, .featured img {
     max-width: 225px;
-    min-height: 200px;
+    max-height: 250px;
   }
-  .salesCon, .newsCon {
+  .salesCon, .newsCon,.featuredCon {
     width: 80%;
     height: 100%;
     display: flex;
@@ -543,37 +536,33 @@ input{
     overflow-y: hidden;
     scroll-behavior: smooth;
     text-align: center;
-    margin: 0 0 0 20%;
+    margin: 0 0 0 auto;
   }
   .slide{
     margin: auto 15% 15% auto;
     color: white;
     background-color: #2b3361;
     border-radius: 10%;
+    min-height: 434px;
   }
+
 
 
   /*products and used*/
 
-  .poducts_main {
+  .products {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .games_card img {
-    max-width: 100%;
+  .products img {
+    max-width: 80vw;
   }
-  .games_card {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    background-color: #cccccc;
-    margin: 50px auto;
-  }
-
-  .games_card a {
+  .products a{
+    margin: 20px auto 60px auto;
     text-align: center;
   }
+
   .body_products {
     background-repeat: repeat-y;
     background-size: 250%;
@@ -654,78 +643,41 @@ input{
     grid-row-start: 2;
     text-align: center;
   }
+  .featuredCon{
+    width: 15vw;
+    display: flex;
+  }
+  .featuredCon a
+  {margin: 0 20px;}
+  .featured{
+    grid-row: 1/2;
+    margin: 0 auto;
+  }
 
   /*products ad used*/
 
-  .products,
-  .used {
+  .products{
+    max-width: 90vw;
+    margin: 0 auto;
     display: grid;
-    column-gap: 4%;
-    grid-template-columns: repeat(5, 1fr);
+    column-gap:4em;
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(5, auto);
     color: white;
-    row-gap: 1%;
-  }
-  .games_card h3 {
-    height: 0%;
+    justify-content:center ;
   }
 
-  .products h1,
-  .used h1 {
-    grid-column: 1/6;
+  .products h1{
+    grid-column: 1/-1;
     grid-row: 1/2;
+    margin-bottom: 40px;
   }
-  .games_card img {
-    max-width: 100%;
-  }
-  .games_card {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
+  .products a{
+    max-width: 20vw;
     text-align: center;
-    margin: 50px auto;
-    min-height: 420px ;
-    justify-content: space-between;
-
   }
   .games_card h2{
     margin: 10px;
-  }
-
-  .ping_pong,
-  .space {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .black,
-  .racing {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-  .super_duper,
-  .cyber {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-  .boxer {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  .forge_legend {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-
-  .furious {
-    grid-column: 4/5;
-    grid-row: 3/4;
-  }
-
-  .assassin {
-    grid-column: 2/3;
-    grid-row: 4/5;
   }
    /*details*/
 .detailsMain{
@@ -753,6 +705,8 @@ input{
 .detailsMain p{
   grid-column: 1/3;
   font-size: 1.4em;
+  margin: 0 auto 20px 0;
+  max-width: 440px;
 }
 .select{
   margin: 0 auto 0 0;

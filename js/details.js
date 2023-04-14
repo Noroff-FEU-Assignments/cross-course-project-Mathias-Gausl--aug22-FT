@@ -13,7 +13,6 @@ async function game() {
   try {
     let resp = await fetch(newUrl);
     let json = await resp.json();
-    console.log(json);
     loader.remove();
     return json;
   } catch (error) {
@@ -21,7 +20,6 @@ async function game() {
   }
 }
 function detail(json) {
-  console.log(json);
   html.innerHTML += `<h1>${json.name}</h1><div class="game_img"><img src="${json.images[0].src}"alt="${json.name} game cover">
   </img></div><div class="rating_img"><img src="${json.images[1].src}"alt="Game Hub rating"></img>
   </div><p class="description">${json.short_description}</p><div class="select"><select name="consoll" id="options" class="consol">
@@ -38,4 +36,14 @@ function detail(json) {
     }£</em><em class="priceBtn">${json.prices.price / 100}£</em>`;
   }
 }
+function CheckIfGameIsUsed(json){
+  let select= document.querySelector("select")
+  for(let i=0; i < json.categories.length; i++ ){
+    game= json.categories[i]
+    if(game.name === "used"){
+      select.style.display="none"
+    }
+  }
+}
 detail(await game());
+CheckIfGameIsUsed(await game())
