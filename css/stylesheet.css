@@ -609,8 +609,8 @@ input{
 
   .home_main {
     display: grid;
-    column-gap: 8%;
-    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    grid-template-columns: repeat(2, 50vw);
     grid-template-rows: repeat(5, auto);
     color: white;
     justify-items: center;
@@ -631,7 +631,6 @@ input{
     width: 28vw;
     grid-column: 2/3;
     grid-row-start: 2;
-    margin: 100px;
     text-align: center;
     align-self: baseline;
   }
@@ -644,17 +643,21 @@ input{
     text-align: center;
   }
   .featuredCon{
-    width: 15vw;
     display: flex;
   }
-  .featuredCon a
-  {margin: 0 20px;}
+  .featuredCon a{
+    margin:20px 40px;
+    width: 15vw;
+    display: flex;
+    text-align: center;
+  }
   .featured{
-    grid-row: 1/2;
-    margin: 0 auto;
+   margin: 20px auto 100px auto;
+   grid-column: 1/-1;
+   grid-row: 1/2;
   }
 
-  /*products ad used*/
+  /*products and used*/
 
   .products{
     max-width: 90vw;
@@ -756,4 +759,12 @@ input{
     height: 300px;
     width: 160px;
   }
+    /*products and used*/
+    .featuredCon a{
+      width: 200px;
+    }
+    .products a{
+      max-width: 250px;
+      text-align: center;
+    }
 }

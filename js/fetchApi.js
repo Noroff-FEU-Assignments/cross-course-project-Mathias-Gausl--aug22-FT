@@ -11,6 +11,7 @@ export let getfunction = async function getGames() {
   }
 };
 export function createHtml(apiFunction, categ, con) {
+  loading.style.display="none";
   for (let i = 0; i < apiFunction.length; i++) {
     let objects = apiFunction[i];
     for (let i = 0; i < objects.categories.length; i++) {
@@ -30,7 +31,6 @@ export function createHtml(apiFunction, categ, con) {
           }£</em><em class="currentPrice">${
             objects.prices.price / 100
           }£</em></a>`;
-          loading.innerHTML = "";
         }
       } else {
         if (categori.name === categ) {
