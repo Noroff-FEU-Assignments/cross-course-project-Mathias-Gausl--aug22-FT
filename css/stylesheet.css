@@ -462,6 +462,30 @@ input{
   color: white;
   margin-bottom: 40px;
 }
+/*Product and used page*/
+#sorting{
+  background-color: #2b3361;
+  color: white;
+  min-height: 40px;
+  margin-top: 40px;
+  border: 2px solid;
+}
+::placeholder{
+  color: white;
+}
+#search{
+  min-height: 30px;
+  background-color: #2b3361;
+  color: white;
+  border: 2px solid;
+}
+.sorting{
+  color: white;
+  margin: 30px auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 700px) {
   /*general*/
@@ -545,9 +569,6 @@ input{
     border-radius: 10%;
     min-height: 434px;
   }
-
-
-
   /*products and used*/
 
   .products {
@@ -562,7 +583,6 @@ input{
     margin: 20px auto 60px auto;
     text-align: center;
   }
-
   .body_products {
     background-repeat: repeat-y;
     background-size: 250%;
@@ -665,7 +685,7 @@ input{
     display: grid;
     column-gap:4em;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(auto);
     color: white;
     justify-content:center ;
   }
@@ -681,6 +701,23 @@ input{
   }
   .games_card h2{
     margin: 10px;
+  }
+  .sorting{
+    flex-direction: row;
+    width: 75vw;
+    margin: 0 auto 40px auto;
+    align-items: center;
+    justify-content: left;
+
+  }
+  #search{
+    height: 36px;
+    margin-top: auto;
+    margin-right: 30px;
+   
+  }
+  .sorting label{
+    width: fit-content;
   }
    /*details*/
 .detailsMain{
@@ -714,6 +751,7 @@ input{
 .select{
   margin: 0 auto 0 0;
 }
+
 }
 @media screen and (min-width: 1000px) {
   /*login and sigup*/
@@ -766,5 +804,8 @@ input{
     .products a{
       max-width: 250px;
       text-align: center;
+    }
+    .sorting{
+      width: 900px;
     }
 }

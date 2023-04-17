@@ -64,9 +64,22 @@
       </section>
     </header>
     <main>
-      <section class="products">
         <em class="loading">Loading.....</em>
         <h1>Products</h1>
+        <div class="sorting">
+          <label for="search"hidden>Search</label>
+          <input type="text" placeholder="Search.." id="search"></input>
+          <div>
+          <label for="sorting" hidden>Sort by:</label>
+          <select name="sorting" id="sorting">
+            <option value="noSort">Sorting</option>
+            <option value="price">Price(Low-High)</option>
+            <option value="priceHigh">Price(High-Low)</option>
+            <option value="a">Name A-Z</option>
+          </select>
+        </div>
+        </div>
+        <section class="products">
       </section>
     </main>
     <footer>
