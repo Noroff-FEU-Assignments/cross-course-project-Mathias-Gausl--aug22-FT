@@ -173,26 +173,30 @@ main {
   padding: 0 30px;
 }
 .cart_items {
-  max-width: 400px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(4,auto);
   color: white;
-  align-items: center;
+  justify-content: center;
   border-bottom: solid 2px white;
-  min-width: 231px;
+  width: 150px;
   margin-bottom: 30px;
+  text-align: center;
 }
-.cart_items p {
-  padding: 15px 30px;
+.cart_items em {
+  padding: 5px 15px;
   margin: 0;
+  display: block;
+  
 }
 #cart_body {
   background-image: none;
   background-color: #2b3361;
 }
 #cart_body h2 {
-  font-size: 1.3em;
-  max-width: 85px;
-  margin: 0 auto;
+  font-size: 1.2em;
+  margin:10px auto;
+  grid-row: 1/2;
 }
 #total {
   color: white;
@@ -201,6 +205,18 @@ main {
   margin-top: 30px;
   margin-bottom: 15px;
   font-size: 30px;
+}
+.consoleType{
+grid-row: 3/4;
+margin: 10px auto;
+}
+.consoleType em{
+  padding: 0;
+}
+.remove{
+  grid-row: 4/5;
+   max-width: 40px;
+   margin: 10px auto;
 }
 
 /*login page and signup page*/
@@ -750,6 +766,28 @@ input{
 }
 .select{
   margin: 0 auto 0 0;
+}
+/*cart*/
+.cart_items {
+  display: flex;
+  color: white;
+  align-items: center;
+  border-bottom: solid 2px white;
+  width: 400px;
+  margin-bottom: 40px;
+}
+.remove{
+   width: 40px;
+   height: 20px;
+   margin: 10px 0 10px auto;
+}
+#cart_body h2{
+  margin: 10px auto 10px 0;
+  max-width: 100px;
+  text-align: left;
+}
+.cart_items em{
+  margin: 10px 0 10px auto;
 }
 
 }

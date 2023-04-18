@@ -6,7 +6,7 @@ const newUrl = url + idParameter;
 const detailCon = document.querySelector(".details");
 const loader = document.querySelector(".loading");
 const html = document.createElement("div");
-html.setAttribute("class","detailsMain")
+html.setAttribute("class", "detailsMain");
 let image = "";
 detailCon.append(html);
 async function game() {
@@ -20,9 +20,15 @@ async function game() {
   }
 }
 function detail(json) {
-  html.innerHTML += `<h1>${json.name}</h1><div class="game_img"><img src="${json.images[0].src}"alt="${json.name} game cover">
-  </img></div><div class="rating_img"><img src="${json.images[1].src}"alt="Game Hub rating"></img>
-  </div><p class="description">${json.short_description}</p><div class="select"><select name="consoll" id="options" class="consol">
+  html.innerHTML += `<h1>${json.name}</h1><div class="game_img"><img src="${
+    json.images[0].src
+  }"alt="${json.name} game cover">
+  </img></div><div class="rating_img"><img src="${
+    json.images[1].src
+  }"alt="Game Hub rating"></img>
+  </div><p class="description">${
+    json.short_description
+  }</p><div class="select"><select name="consoll" id="options" class="consol">
   <option value="PS5">PS5</option>
   <option value="PC">PC</option>
   <option value="Xbox-One">Xbox One</option>
@@ -35,15 +41,54 @@ function detail(json) {
       json.prices.regular_price / 100
     }£</em><em class="priceBtn">${json.prices.price / 100}£</em>`;
   }
+  const buyBtn = document.querySelector(".buy");
+  function addToCart() {
+    let consol = document.querySelector("#options");
+    for (let i = 0; i < json.categories.length; i++) {
+      game = json.categories[i];
+      if (game.name === "used") {
+        let description = json.description;
+        let descriptionRemovedTag = description
+          .replace(`<p>`, ` `)
+          .replace(`</p>`, ` `);
+        let object = {
+          name: json.name,
+          price: json.prices.price / 100,
+          console: descriptionRemovedTag,
+          id: json.id,
+        };
+        localStorage.setItem(
+          "shoppingcart" + idParameter,
+          JSON.stringify(object)
+        );
+        location.reload();
+      } else {
+        let object = {
+          name: json.name,
+          price: json.prices.price / 100,
+          console: consol.value,
+          id: json.id,
+        };
+        localStorage.setItem(
+          "shoppingcart" + idParameter,
+          JSON.stringify(object)
+        );
+        location.reload();
+      }
+    }
+  }
+  buyBtn.addEventListener("click", () => {
+    addToCart();
+  });
 }
-function CheckIfGameIsUsed(json){
-  let select= document.querySelector("select")
-  for(let i=0; i < json.categories.length; i++ ){
-    game= json.categories[i]
-    if(game.name === "used"){
-      select.style.display="none"
+function CheckIfGameIsUsed(json) {
+  let select = document.querySelector("select");
+  for (let i = 0; i < json.categories.length; i++) {
+    game = json.categories[i];
+    if (game.name === "used") {
+      select.style.display = "none";
     }
   }
 }
 detail(await game());
-CheckIfGameIsUsed(await game())
+CheckIfGameIsUsed(await game());
