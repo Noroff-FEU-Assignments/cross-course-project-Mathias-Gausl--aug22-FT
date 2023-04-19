@@ -5,35 +5,32 @@ const textfield = document.getElementById("write");
 const textLabel = document.getElementById("writeLabel");
 const send = document.getElementById("send_contact");
 const emailLabel = document.getElementById("emailLabel");
-const h3= document.querySelector("h3")
-
-
+const h3 = document.querySelector("h3");
 /*validation functions */
 function emailVal() {
   const emailvalue = email.value;
   const verification = /\S+@\S+\.\S+/;
   return verification.test(emailvalue);
 }
-function invalidInput(input, label,errormessage,originalName, num){
-    if(input.value.trim().length >= num){
-      label.style.color="white";
-      input.style.border="1px white solid";
-      label.innerHTML= originalName;
-    }
-    else{
-      label.style.color="red";
-      input.style.border="2px red solid";
-      label.innerHTML= errormessage;
-    }
+function invalidInput(input, label, errormessage, originalName, num) {
+  if (input.value.trim().length >= num) {
+    label.style.color = "white";
+    input.style.border = "1px white solid";
+    label.innerHTML = originalName;
+  } else {
+    label.style.color = "red";
+    input.style.border = "2px red solid";
+    label.innerHTML = errormessage;
   }
-  function inputLength(input, num) {
-    const inputlength = input.value.trim().length;
-    if (inputlength >= num) {
-      return true;
-    } else {
-      return false;
-    }
+}
+function inputLength(input, num) {
+  const inputlength = input.value.trim().length;
+  if (inputlength >= num) {
+    return true;
+  } else {
+    return false;
   }
+}
 /*onclick functions */
 send.addEventListener("click", () => {
   if (emailVal() === true) {
@@ -46,8 +43,24 @@ send.addEventListener("click", () => {
     emailLabel.innerHTML = "Invalid Email";
   }
 });
-send.addEventListener("click", ()=>{invalidInput(nameInp, nameLabel,"Full name needs to be a minimum of 6 characters","Full name", 6)})
-send.addEventListener("click", ()=>{invalidInput(textfield, textLabel,"Message needs to contain a minimum of 20 characters","Your message here:", 20)})
+send.addEventListener("click", () => {
+  invalidInput(
+    nameInp,
+    nameLabel,
+    "Full name needs to be a minimum of 6 characters",
+    "Full name",
+    6
+  );
+});
+send.addEventListener("click", () => {
+  invalidInput(
+    textfield,
+    textLabel,
+    "Message needs to contain a minimum of 20 characters",
+    "Your message here:",
+    20
+  );
+});
 /*send */
 send.addEventListener("click", (click) => {
   click.preventDefault();

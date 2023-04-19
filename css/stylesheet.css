@@ -57,11 +57,10 @@ footer {
   max-width: 100%;
   flex-direction: column;
 }
-footer ul{
+footer ul {
   list-style: none;
   width: fit-content;
   padding-left: 20px;
-
 }
 .cta_p {
   display: flex;
@@ -97,7 +96,6 @@ main {
   max-width: 90vw;
   display: flex;
   align-items: center;
-
 }
 #cart {
   color: white;
@@ -111,7 +109,7 @@ main {
 .i {
   margin: 0 auto;
 }
-.loading{
+.loading {
   font-size: 3em;
   font-weight: bold;
   grid-column: -1/1;
@@ -122,10 +120,10 @@ main {
   margin-top: 100px;
 }
 /*home page*/
-#h3gameCard{
+#h3gameCard {
   margin-top: 0px;
 }
-.oldPrice{
+.oldPrice {
   text-decoration: line-through red;
   font-size: 1.2em;
   color: white;
@@ -133,15 +131,16 @@ main {
 .slide img {
   border-radius: 10% 10% 0 0;
 }
-.slide h2, .slide h3{
+.slide h2,
+.slide h3 {
   margin-bottom: 0.3em;
   margin-top: 0.2em;
   color: white;
 }
-.slide{
+.slide {
   text-decoration: none;
 }
-.currentPrice{
+.currentPrice {
   margin-bottom: 1em;
   display: block;
   font-size: 1.5em;
@@ -174,8 +173,8 @@ main {
 }
 .cart_items {
   display: grid;
-  grid-template-columns: repeat(1,auto);
-  grid-template-rows: repeat(4,auto);
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(4, auto);
   color: white;
   justify-content: center;
   border-bottom: solid 2px white;
@@ -187,7 +186,6 @@ main {
   padding: 5px 15px;
   margin: 0;
   display: block;
-  
 }
 #cart_body {
   background-image: none;
@@ -195,7 +193,7 @@ main {
 }
 #cart_body h2 {
   font-size: 1.2em;
-  margin:10px auto;
+  margin: 10px auto;
   grid-row: 1/2;
 }
 #total {
@@ -206,17 +204,17 @@ main {
   margin-bottom: 15px;
   font-size: 30px;
 }
-.consoleType{
-grid-row: 3/4;
-margin: 10px auto;
+.consoleType {
+  grid-row: 3/4;
+  margin: 10px auto;
 }
-.consoleType em{
+.consoleType em {
   padding: 0;
 }
-.remove{
+.remove {
   grid-row: 4/5;
-   max-width: 40px;
-   margin: 10px auto;
+  max-width: 40px;
+  margin: 10px auto;
 }
 
 /*login page and signup page*/
@@ -232,13 +230,11 @@ margin: 10px auto;
   color: white;
   overflow: scroll;
   align-items: center;
-  
-
 }
-.login div{
- margin-bottom: 30px;
+.login div {
+  margin-bottom: 30px;
 }
-.login h1{
+.login h1 {
   margin: 50px auto 30px auto;
 }
 
@@ -267,11 +263,13 @@ margin: 10px auto;
 .sub em {
   color: red;
 }
-#eye, #eyeRepeat{
+#eye,
+#eyeRepeat {
   display: none;
   margin: 0 0 0 10px;
 }
-#eyeClosed, #eyeClosedRepeat{
+#eyeClosed,
+#eyeClosedRepeat {
   margin: 0 0 0 10px;
 }
 
@@ -284,7 +282,7 @@ margin: 10px auto;
   text-align: center;
   min-width: 180px;
 }
-.passinput{
+.passinput {
   min-width: 150px !important;
 }
 .log_button {
@@ -302,7 +300,7 @@ margin: 10px auto;
   max-width: 18px;
   min-width: 20px;
 }
-#submitSignup{
+#submitSignup {
   height: 30px;
 }
 /*about us page*/
@@ -344,44 +342,45 @@ margin: 10px auto;
 .p_contact h3 {
   text-align: center;
 }
-#thx_h1{
+#thx_h1 {
   text-align: center;
 }
 
 /*game info*/
 
-.details img{
+.details img {
   max-width: 80vw;
   max-height: 60vh;
 }
-.game_img, .rating_img{
+.game_img,
+.rating_img {
   width: fit-content;
   margin: 0 auto 30px auto;
 }
-.details p{
+.details p {
   max-width: 60vw;
   margin: 0 auto 30px auto;
   color: white;
   font-size: 1.2;
 }
-.consol{
+.consol {
   min-width: 90px;
   min-height: 40px;
 }
-.select{
+.select {
   width: fit-content;
   margin: 0 auto 30px auto;
 }
-.priceBtn{
+.priceBtn {
   font-size: 1.4em;
 }
-.oldPriceBtn{
- text-decoration: line-through red;
+.oldPriceBtn {
+  text-decoration: line-through red;
 }
-.details h1{
+.details h1 {
   margin-bottom: 40px;
 }
-.detailsmain{
+.detailsmain {
   overflow-x: hidden;
 }
 
@@ -403,13 +402,13 @@ margin: 10px auto;
   border-radius: 15%;
   margin: 15px auto;
 }
-.progression{
+.progression {
   padding-top: 10px;
 }
-#checkout{
+#checkout {
   margin: 30px auto;
 }
-.checkout_main h3{
+.checkout_main h3 {
   background-color: lightcoral;
   color: black;
   max-width: 300px;
@@ -419,15 +418,14 @@ margin: 10px auto;
   text-align: center;
   font-size: 1em;
 }
-.paybutton{
-   margin: 0 auto;
-   
+.paybutton {
+  margin: 0 auto;
 }
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
- appearance: none;
+input::-webkit-inner-spin-button {
+  appearance: none;
 }
-input{
+input {
   -moz-appearance: textfield;
 }
 .paySection,
@@ -479,23 +477,23 @@ input{
   margin-bottom: 40px;
 }
 /*Product and used page*/
-#sorting{
+#sorting {
   background-color: #2b3361;
   color: white;
   min-height: 40px;
   margin-top: 40px;
   border: 2px solid;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
-#search{
+#search {
   min-height: 30px;
   background-color: #2b3361;
   color: white;
   border: 2px solid;
 }
-.sorting{
+.sorting {
   color: white;
   margin: 30px auto;
   width: fit-content;
@@ -512,7 +510,7 @@ input{
     text-align: center;
   }
   .i img {
-   max-width: 180px;
+    max-width: 180px;
   }
   .i {
     width: 50%;
@@ -564,11 +562,14 @@ input{
   /*home page*/
 
   .sales img,
-  .news img, .featured img {
+  .news img,
+  .featured img {
     max-width: 225px;
     max-height: 250px;
   }
-  .salesCon, .newsCon,.featuredCon {
+  .salesCon,
+  .newsCon,
+  .featuredCon {
     width: 80%;
     height: 100%;
     display: flex;
@@ -578,7 +579,7 @@ input{
     text-align: center;
     margin: 0 0 0 auto;
   }
-  .slide{
+  .slide {
     margin: auto 15% 15% auto;
     color: white;
     background-color: #2b3361;
@@ -586,16 +587,16 @@ input{
     min-height: 434px;
   }
   /*products and used*/
-
   .products {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .products img {
-    max-width: 80vw;
+    max-width: 60vw;
   }
-  .products a{
+  .products a {
+    max-width: 60vw;
     margin: 20px auto 60px auto;
     text-align: center;
   }
@@ -614,7 +615,7 @@ input{
 }
 @media screen and (min-width: 701px) {
   /*general*/
-  footer ul{
+  footer ul {
     margin: 16px 0 16px 0;
   }
   #ham,
@@ -640,9 +641,7 @@ input{
     width: fit-content;
     margin: 1% auto;
   }
-
   /*home page*/
-
   .home_main {
     display: grid;
     column-gap: 40px;
@@ -651,26 +650,25 @@ input{
     color: white;
     justify-items: center;
   }
-  .home_main h1{
+  .home_main h1 {
     font-size: 3em;
   }
-  .slide{
+  .slide {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-height: min-content;
-    margin-bottom: 100px ;
-    background-color:#2b3361 ;
+    margin-bottom: 100px;
+    background-color: #2b3361;
     border-radius: 10%;
   }
-  .news{
+  .news {
     width: 28vw;
     grid-column: 2/3;
     grid-row-start: 2;
     text-align: center;
     align-self: baseline;
   }
-
   .sales {
     width: 23vw;
     grid-column: 1/2;
@@ -678,118 +676,112 @@ input{
     grid-row-start: 2;
     text-align: center;
   }
-  .featuredCon{
+  .featuredCon {
     display: flex;
   }
-  .featuredCon a{
-    margin:20px 40px;
+  .featuredCon a {
+    margin: 20px 40px;
     width: 15vw;
     display: flex;
     text-align: center;
   }
-  .featured{
-   margin: 20px auto 100px auto;
-   grid-column: 1/-1;
-   grid-row: 1/2;
+  .featured {
+    margin: 20px auto 100px auto;
+    grid-column: 1/-1;
+    grid-row: 1/2;
   }
-
   /*products and used*/
-
-  .products{
+  .products {
     max-width: 90vw;
     margin: 0 auto;
     display: grid;
-    column-gap:4em;
+    column-gap: 4em;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(auto);
     color: white;
-    justify-content:center ;
+    justify-content: center;
   }
-
-  .products h1{
+  .products h1 {
     grid-column: 1/-1;
     grid-row: 1/2;
     margin-bottom: 40px;
   }
-  .products a{
+  .products a {
     max-width: 20vw;
     text-align: center;
   }
-  .games_card h2{
+  .games_card h2 {
     margin: 10px;
   }
-  .sorting{
+  .sorting {
     flex-direction: row;
     width: 75vw;
     margin: 0 auto 40px auto;
     align-items: center;
     justify-content: left;
-
   }
-  #search{
+  #search {
     height: 36px;
     margin-top: auto;
     margin-right: 30px;
-   
   }
-  .sorting label{
+  .sorting label {
     width: fit-content;
   }
-   /*details*/
-.detailsMain{
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, auto, 1fr;
-  justify-content: center;
-  column-gap: 50px;
-  width: 100vw;
-  margin: 0 auto;
-}
-.game_info {
-  grid-column: 1/2;
-}
-.rating_img {
-  grid-column: 2/3;
-}
-.cta_p {
-  grid-column: 1/3;
-}
-.detailsMain h1 {
-  grid-column: 1/3;
-  margin: 100px auto 50px auto;
-}
-.detailsMain p{
-  grid-column: 1/3;
-  font-size: 1.4em;
-  margin: 0 auto 20px 0;
-  max-width: 440px;
-}
-.select{
-  margin: 0 auto 0 0;
-}
-/*cart*/
-.cart_items {
-  display: flex;
-  color: white;
-  align-items: center;
-  border-bottom: solid 2px white;
-  width: 400px;
-  margin-bottom: 40px;
-}
-.remove{
-   width: 40px;
-   height: 20px;
-   margin: 10px 0 10px auto;
-}
-#cart_body h2{
-  margin: 10px auto 10px 0;
-  max-width: 100px;
-  text-align: left;
-}
-.cart_items em{
-  margin: 10px 0 10px auto;
-}
-
+  /*details*/
+  .detailsMain {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, auto, 1fr;
+    justify-content: center;
+    column-gap: 50px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .game_info {
+    grid-column: 1/2;
+  }
+  .rating_img {
+    grid-column: 2/3;
+  }
+  .cta_p {
+    grid-column: 1/3;
+  }
+  .detailsMain h1 {
+    grid-column: 1/3;
+    margin: 100px auto 50px auto;
+  }
+  .detailsMain p {
+    grid-column: 1/3;
+    font-size: 1.4em;
+    margin: 0 auto 20px 0;
+    max-width: 440px;
+  }
+  .select {
+    margin: 0 auto 0 0;
+  }
+  /*cart*/
+  .cart_items {
+    display: flex;
+    color: white;
+    align-items: center;
+    border-bottom: solid 2px white;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+  .remove {
+    width: 40px;
+    height: 20px;
+    margin: 10px 0 10px auto;
+  }
+  #cart_body h2 {
+    margin: 10px auto 10px 0;
+    max-width: 100px;
+    text-align: left;
+  }
+  .cart_items em {
+    margin: 10px 0 10px auto;
+  }
 }
 @media screen and (min-width: 1000px) {
   /*login and sigup*/
@@ -804,7 +796,6 @@ input{
     height: 40px;
   }
   /*contact*/
-
   .contact_form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -835,15 +826,15 @@ input{
     height: 300px;
     width: 160px;
   }
-    /*products and used*/
-    .featuredCon a{
-      width: 200px;
-    }
-    .products a{
-      max-width: 250px;
-      text-align: center;
-    }
-    .sorting{
-      width: 900px;
-    }
+  /*products and used*/
+  .featuredCon a {
+    width: 200px;
+  }
+  .products a {
+    max-width: 250px;
+    text-align: center;
+  }
+  .sorting {
+    width: 900px;
+  }
 }

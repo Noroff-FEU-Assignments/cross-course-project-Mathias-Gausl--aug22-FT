@@ -1,12 +1,10 @@
 const cart = document.querySelector("#cart");
-const buyBtn = document.querySelector(".buy")
+const buyBtn = document.querySelector(".buy");
 let num = localStorage.length;
 function newItem() {
-  if (localStorage.length ++) {
+  if (localStorage.length++) {
     cart.innerHTML += `<em  class="itemAdded">${num}</em>`;
     cart.style.fontSize = "1.3em";
-
-    
   } else {
     cart.innerHTML = ` 
       <a href="cart.html" id="cart">
@@ -14,9 +12,10 @@ function newItem() {
       </a>
     `;
   }
-  
 }
 newItem();
-if(buyBtn != null){buyBtn.addEventListener("click",()=>{location.reload()})};
-
-
+if (buyBtn != null) {
+  buyBtn.addEventListener("click", () => {
+    location.reload();
+  });
+}
