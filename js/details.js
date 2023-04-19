@@ -5,6 +5,7 @@ const idParameter = newParam.get("id");
 const newUrl = url + idParameter;
 const detailCon = document.querySelector(".details");
 const loader = document.querySelector(".loading");
+const title = document.querySelector("title");
 const html = document.createElement("div");
 html.setAttribute("class", "detailsMain");
 let image = "";
@@ -20,6 +21,7 @@ async function game() {
   }
 }
 function detail(json) {
+  title.innerHTML = `${json.name} details`
   html.innerHTML += `<h1>${json.name}</h1><div class="game_img"><img src="${
     json.images[0].src
   }"alt="${json.name} game cover">
