@@ -1,10 +1,9 @@
-const url = "http://gamehubproducts.local/wp-json/wc/store/products";
+const url = "https://wp.gamehubstore.live/wp-json/wc/store/products";
 const loading = document.querySelector(".loading");
 export let getfunction = async function getGames() {
   try {
     const fetchapi = await fetch(url);
     const gamesJson = await fetchapi.json();
-    console.log(gamesJson)
     return gamesJson;
   } catch (error) {
     console.log(error);

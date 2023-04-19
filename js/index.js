@@ -9,10 +9,9 @@ createHtml(await getfunction(), "deals", sales);
 async function apiFeatured() {
   try {
     const fetchapi = await fetch(
-      "http://gamehubproducts.local/wp-json/wc/store/products?featured=true"
+      "https://wp.gamehubstore.live/wp-json/wc/store/products?featured=true"
     );
     const gamesJson = await fetchapi.json();
-    console.log(gamesJson);
     return gamesJson;
   } catch (error) {
     console.log(error);

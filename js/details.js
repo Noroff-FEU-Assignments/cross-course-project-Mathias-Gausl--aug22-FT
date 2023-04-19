@@ -1,4 +1,4 @@
-const url = "http://gamehubproducts.local/wp-json/wc/store/products/";
+const url = "https://wp.gamehubstore.live/wp-json/wc/store/products/";
 const querry = document.location.search;
 const newParam = new URLSearchParams(querry);
 const idParameter = newParam.get("id");

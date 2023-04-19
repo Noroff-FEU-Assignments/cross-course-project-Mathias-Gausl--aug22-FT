@@ -77,10 +77,8 @@ search.addEventListener("keyup", () => {
       return true;
     }
   });
-  console.log(searchResult);
   if (searchResult.length >= 1) {
     html(searchResult);
-    console.log(searchResult);
   } else {
     con.innerHTML = `<h2>Sorry no matches</h2>`;
   }
