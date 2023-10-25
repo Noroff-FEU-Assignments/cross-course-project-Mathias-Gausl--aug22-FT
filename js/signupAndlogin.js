@@ -8,10 +8,10 @@ const nameLabel = document.getElementById("fName");
 const repass = document.getElementById("rePass");
 const repassLabel = document.getElementById("rePassLabel");
 const submitSignup = document.getElementById("submitSignup");
-const eyeclosed= document.getElementById("eyeClosed");
-const eyeopen= document.getElementById("eye");
-const eyeclosedRepeat= document.getElementById("eyeClosedRepeat");
-const eyeopenRepeat= document.getElementById("eyeRepeat");
+const eyeclosed = document.getElementById("eyeClosed");
+const eyeopen = document.getElementById("eye");
+const eyeclosedRepeat = document.getElementById("eyeClosedRepeat");
+const eyeopenRepeat = document.getElementById("eyeRepeat");
 
 /*validation functions */
 
@@ -60,7 +60,7 @@ if (submit != null) {
       passLabel,
       "Password needs to be a minimum of 8 characters",
       "Password",
-      8
+      8,
     );
   });
   submit.addEventListener("click", () => {
@@ -93,7 +93,7 @@ if (submitSignup != null) {
       nameLabel,
       "Full name needs to be a minimum of 6 characters",
       "Full Name",
-      6
+      6,
     );
   });
   submitSignup.addEventListener("click", () => {
@@ -113,7 +113,7 @@ if (submitSignup != null) {
       passLabel,
       "Password needs to be a minimum of 8 characters",
       "Password",
-      8
+      8,
     );
   });
   submitSignup.addEventListener("click", (click) => {
@@ -128,24 +128,25 @@ if (submitSignup != null) {
     }
   });
 }
-eyeclosed.addEventListener("click", ()=> {
-  pass.type= "text";
-  eyeclosed.style.display= "none";
-  eyeopen.style.display= "inline";
-})
-eyeopen.addEventListener("click", ()=> {
-  pass.type= "password";
-  eyeclosed.style.display= "inline";
-  eyeopen.style.display= "none";
-})
-if(repass != null){
-  eyeclosedRepeat.addEventListener("click", ()=> {
-    repass.type= "text";
-    eyeclosedRepeat.style.display= "none";
-    eyeopenRepeat.style.display= "inline";
-  })
-  eyeopenRepeat.addEventListener("click", ()=> {
-    repass.type= "password";
-    eyeclosedRepeat.style.display= "inline";
-    eyeopenRepeat.style.display= "none";
-  })}
+eyeclosed.addEventListener("click", () => {
+  pass.type = "text";
+  eyeclosed.style.display = "none";
+  eyeopen.style.display = "inline";
+});
+eyeopen.addEventListener("click", () => {
+  pass.type = "password";
+  eyeclosed.style.display = "inline";
+  eyeopen.style.display = "none";
+});
+if (repass != null) {
+  eyeclosedRepeat.addEventListener("click", () => {
+    repass.type = "text";
+    eyeclosedRepeat.style.display = "none";
+    eyeopenRepeat.style.display = "inline";
+  });
+  eyeopenRepeat.addEventListener("click", () => {
+    repass.type = "password";
+    eyeclosedRepeat.style.display = "inline";
+    eyeopenRepeat.style.display = "none";
+  });
+}
