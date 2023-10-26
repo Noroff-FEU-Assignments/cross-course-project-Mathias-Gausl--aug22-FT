@@ -12,6 +12,7 @@ const eyeclosed = document.getElementById("eyeClosed");
 const eyeopen = document.getElementById("eye");
 const eyeclosedRepeat = document.getElementById("eyeClosedRepeat");
 const eyeopenRepeat = document.getElementById("eyeRepeat");
+export { passwordmatch };
 
 /*validation functions */
 
