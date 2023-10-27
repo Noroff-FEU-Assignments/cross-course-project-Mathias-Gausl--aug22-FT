@@ -7,7 +7,7 @@
     "test": "npm run test-e2e-cli && npm run testJest",
     "test-e2e": "cypress open",
     "testJest": "npm run test-unit",
-    "test-e2e-cli": "cypress run --headed",
+    "test-e2e-cli": "cypress run",
     "test-unit": "jest --env=jsdom",
     "prepare": "husky install"
   },
