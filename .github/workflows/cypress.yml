@@ -14,5 +14,5 @@ jobs:
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v6
         with:
-          browser: electron
+          browser: chrome --headed
 
