@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: run cypress tests with electron
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           browser: electron
 
