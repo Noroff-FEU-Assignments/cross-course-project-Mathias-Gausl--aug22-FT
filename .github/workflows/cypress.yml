@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout under $GITHUB_WORKSPACE
-        uses: actions/checkout@auto-testing
+        uses: actions/checkout@V4
 
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v6
