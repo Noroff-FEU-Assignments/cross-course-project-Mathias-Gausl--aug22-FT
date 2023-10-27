@@ -7,7 +7,8 @@
     "test": "npm run test-unit && npm run test-e2e-cli",
     "test-unit": "jest",
     "test-e2e": "cypress open",
-    "test-e2e-cli": "cypress run"
+    "test-e2e-cli": "cypress run",
+    "start": "npx live-server"
   },
   "author": "mg",
   "license": "ISC",
@@ -35,5 +36,8 @@
     "*.scss": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
